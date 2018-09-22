@@ -1,0 +1,887 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 31.25, 41.625" name="Database">
+  <DataContextMoniker Name="/FudgeDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c04eaced-eb79-4a70-8af5-fb713fab4788" absoluteBounds="9, 31.625, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/FudgeDataContext/Affiliation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2fc90a47-fa58-4ea1-8c21-35b12f1ad743" absoluteBounds="9.015, 32.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="745da1d5-b15c-4bea-917f-e5d656407ea1" absoluteBounds="17.5, 24, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/FudgeDataContext/ArticleChange" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a528fa5-8239-463c-9472-a85f35cca674" absoluteBounds="17.515, 24.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7a506b03-2af7-4287-9b41-b3853fed91b0" absoluteBounds="14.75, 20, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/FudgeDataContext/Article" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1f32d1c7-294c-49e8-861e-9b98a0986177" absoluteBounds="14.765, 20.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9fad9c49-243d-403e-876d-5924f931447f" absoluteBounds="3.5, 28.625, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/FudgeDataContext/Blog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b72bcc21-0a77-48db-a6e0-960d3708bb3f" absoluteBounds="3.515, 29.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dd3a8b83-9f50-4f74-8ebe-08087aa8fb2a" absoluteBounds="6.25, 29.375, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/FudgeDataContext/BlogTag" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5c5114d1-20f2-4ac7-bfc5-9f1f20a777b2" absoluteBounds="6.265, 29.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="00962128-be21-4a03-98d4-815b7e4512a0" absoluteBounds="17.5, 34.125, 2, 1.5785953776041595">
+      <DataClassMoniker Name="/FudgeDataContext/Clarification" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7c425f80-bf99-4a5a-919f-697603e66583" absoluteBounds="17.515, 34.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="637b9f21-2857-4c16-beb5-97fd1e166226" absoluteBounds="23.25, 30.75, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/FudgeDataContext/ContestProblem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2ad5be3e-f445-404f-a4e1-b94521241b94" absoluteBounds="23.265, 31.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5bf7fd69-7b7c-4e4d-bab6-7cbd4ccddc4d" absoluteBounds="14.75, 31.25, 2, 3.309308268229163">
+      <DataClassMoniker Name="/FudgeDataContext/Contest" />
+      <nestedChildShapes>
+        <elementListCompartment Id="538d2a69-8109-4751-a136-13d6486b82de" absoluteBounds="14.765, 31.71, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="05920a4e-6f31-4cab-b50b-5a32ac0b3c8f" absoluteBounds="20.5, 33, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/FudgeDataContext/ContestUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="61b8fbe4-3159-47f8-b7db-8db4e147a462" absoluteBounds="20.515, 33.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18f67d3f-cac8-4894-bfbc-95ebc80a21c4" absoluteBounds="3.5, 32.25, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/FudgeDataContext/Country" />
+      <nestedChildShapes>
+        <elementListCompartment Id="750e8ac1-6a4e-4ed7-a77d-384a084db7a4" absoluteBounds="3.515, 32.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0fd5777d-0d62-4e4e-88be-1de35ab5efac" absoluteBounds="23.25, 26.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/FudgeDataContext/Editorial" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ff32ae66-70ce-4de8-a381-5aa1c3ac8f10" absoluteBounds="23.265, 27.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b546d06c-49ac-4fdb-b228-b77339a10028" absoluteBounds="6.25, 31.75, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/FudgeDataContext/Entity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cd8630f6-b7b1-49f7-840b-b0a543c23df9" absoluteBounds="6.265, 32.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4aa329e4-9bc5-40cd-a117-d295698f57e7" absoluteBounds="29, 25.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/FudgeDataContext/EventInvitation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4cc9eb33-7e91-4996-96cd-6256f703c6bd" absoluteBounds="29.015, 26.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="faa6438b-a3b9-414a-9d64-156b77388678" absoluteBounds="23.25, 22, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/FudgeDataContext/Event" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d8d4046e-4f04-4eae-9bc2-9b75bb97a8df" absoluteBounds="23.265, 22.46, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c239d9e2-00f2-4d89-811a-04415b0827a6" absoluteBounds="1.5, 23.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/FudgeDataContext/ForumCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6f934bbd-10aa-4887-9edd-21f5975a682d" absoluteBounds="1.5150000000000001, 24.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5fc0ce2e-5bd1-4f99-95c4-bc41cd878f11" absoluteBounds="0.75, 28.75, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/FudgeDataContext/Forum" />
+      <nestedChildShapes>
+        <elementListCompartment Id="023ecfb8-aa0f-4fcf-a71b-59f0dcb7ad5a" absoluteBounds="0.765, 29.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b95ecba1-ca00-4610-805a-3fed324d7687" absoluteBounds="14.5, 23.375, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/FudgeDataContext/Friend" />
+      <nestedChildShapes>
+        <elementListCompartment Id="675d4840-69f5-42f9-af57-ef2c06b3cd6f" absoluteBounds="14.515, 23.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9ef2c6b2-0b64-4034-ae97-054d11d74718" absoluteBounds="26.25, 31.375, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/FudgeDataContext/Keyword" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b19319a2-1dcd-4ceb-8df4-178497000fa5" absoluteBounds="26.265, 31.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="404ae4c5-ddb8-465c-91e5-adf07f51ae07" absoluteBounds="9, 27, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/FudgeDataContext/Language" />
+      <nestedChildShapes>
+        <elementListCompartment Id="56620cc9-e350-4d4f-a6c8-959662f25785" absoluteBounds="9.015, 27.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c8d97965-65d8-4706-871b-0518e64eade4" absoluteBounds="3.5, 34.625, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/FudgeDataContext/News" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d49703ce-d05b-4ff8-a49e-bc907514357e" absoluteBounds="3.515, 35.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7ec0ae14-106f-41c1-bca2-3a0bca3fdb25" absoluteBounds="14.5, 27.625, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/FudgeDataContext/NewsFeed" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3954f366-5d54-49c7-9026-34570116a9b7" absoluteBounds="14.515, 28.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="320b9172-9719-4b1b-95f9-9d18a74ea4c2" absoluteBounds="0.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/FudgeDataContext/Newsletter" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5664d8e5-6a00-4bd2-aa6f-428f6124c49a" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="916635bf-b995-4475-99cd-27a7d840ede0" absoluteBounds="14.5, 39.375, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/FudgeDataContext/Notification" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7a9e2217-4141-487c-ba76-a047adcda7fd" absoluteBounds="14.515, 39.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b1d7f80a-3ed8-4314-88d4-34d2d03b554e" absoluteBounds="0.75, 32.25, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/FudgeDataContext/Picture" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6d75c3c4-cd47-40ee-8154-fa875da2ec76" absoluteBounds="0.765, 32.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e88ea64b-489d-4ed9-978a-2d3a662153a3" absoluteBounds="20.25, 24.625, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/FudgeDataContext/Post" />
+      <nestedChildShapes>
+        <elementListCompartment Id="565970b5-7958-4294-8bfb-da6a99ec670f" absoluteBounds="20.265, 25.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="79a0e301-af22-47cf-849c-517a47565e47" absoluteBounds="20.5, 28.125, 2, 3.6939111328125023">
+      <DataClassMoniker Name="/FudgeDataContext/Problem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="75589f7e-457b-4446-8740-674c965891d0" absoluteBounds="20.515, 28.585, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1bc836f8-170c-4659-8243-c85b38679d64" absoluteBounds="17.5, 30, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/FudgeDataContext/ProblemSubmission" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b274308a-e73c-49e0-9933-230adb4c128d" absoluteBounds="17.515, 30.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="96af36ac-afdb-437d-b957-620a201296fe" absoluteBounds="26.25, 22.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/FudgeDataContext/ProblemTag" />
+      <nestedChildShapes>
+        <elementListCompartment Id="341500e6-6a8a-47bf-a4bd-06b9b7a4cef6" absoluteBounds="26.265, 23.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4f938505-2ceb-4b48-a2fb-448f3c07abe2" absoluteBounds="0.75, 26.625, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/FudgeDataContext/Rating" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d5388463-d655-4406-85b1-cf475533feb5" absoluteBounds="0.765, 27.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bec57808-de8f-4eac-8478-4230c32c157b" absoluteBounds="26.25, 25.75, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/FudgeDataContext/Run" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b51dd7af-afde-4b21-aeb3-6b4a66fb21d3" absoluteBounds="26.265, 26.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="274ba8d6-47b5-42da-9885-a31aecd7f3bd" absoluteBounds="17.75, 37.375, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/FudgeDataContext/Source" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8980c4c7-b01e-40ab-9fa5-e57299fb9b29" absoluteBounds="17.765, 37.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="97bd29ff-ee0d-4ae2-8060-a8fb1005f0cf" absoluteBounds="14.5, 36.125, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/FudgeDataContext/Standing" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2264cb09-c3ea-40ff-9461-2c337a1aa6d1" absoluteBounds="14.515, 36.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8ece498b-dcd5-4925-95ce-282ed221665c" absoluteBounds="3.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/FudgeDataContext/SuggestedEntity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8d2efd93-1d1f-414b-b728-00219db2660b" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f2a0ea30-6422-4762-8155-f59d286c364c" absoluteBounds="3.5, 21, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/FudgeDataContext/Tag" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a60007c-cd20-47b1-b64a-d166a5782025" absoluteBounds="3.515, 21.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a52ce8f9-127f-45d1-93bc-b9bdcef6d105" absoluteBounds="11.75, 31.5, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/FudgeDataContext/Team" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ee176f7a-c45e-4abe-aefb-e4cabb90b407" absoluteBounds="11.765, 31.96, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="81f79ece-0603-461f-a197-6e6b8e16e66c" absoluteBounds="20.5, 36, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/FudgeDataContext/TeamUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ca8843a7-a505-48e2-adb9-757f3f8030fd" absoluteBounds="20.515, 36.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c547e1f2-7aa9-4acd-bac3-f23759b74301" absoluteBounds="23.25, 33.125, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/FudgeDataContext/TestCase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a6393818-3da8-4206-af51-336688292bbb" absoluteBounds="23.265, 33.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2e2bb7ee-0780-4f2b-874d-b7cebf6f5ea1" absoluteBounds="29, 29.375, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/FudgeDataContext/TestRun" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6d14b203-f39b-4921-a2f9-97949e677018" absoluteBounds="29.015, 29.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aa211bd8-2e65-4b5f-958d-03d98ed5fa9a" absoluteBounds="17.5, 20.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/FudgeDataContext/Topic" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8fb38671-503c-4b30-95c4-76ba07d43273" absoluteBounds="17.515, 21.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="759efe29-8ec5-4245-af14-8e559ac415bc" absoluteBounds="20.25, 22.25, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/FudgeDataContext/TopicSubscription" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22c5257b-4aff-4b68-82ee-873fa7a073f7" absoluteBounds="20.265, 22.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d3e6541e-2745-4a73-ab4b-1824a0b74b55" absoluteBounds="17.5, 27.25, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/FudgeDataContext/UserRating" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf2b5248-2660-4b10-af38-262fb3bd92c9" absoluteBounds="17.515, 27.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" absoluteBounds="11.75, 25.125, 2, 5.6169254557291666">
+      <DataClassMoniker Name="/FudgeDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7e147b58-c28f-4464-ae88-bea46987b5ba" absoluteBounds="11.765, 25.585, 1.9700000000000002, 5.0569254557291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(16.65625 : 21.7708968098958); (16.65625 : 25.39349609375); (17.1041666666667 : 25.39349609375 : JumpStart); (17.2708333333333 : 25.39349609375 : JumpEnd); (17.5 : 25.39349609375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Article/Article_ArticleChange" />
+      <nodes>
+        <classShapeMoniker Id="7a506b03-2af7-4287-9b41-b3853fed91b0" />
+        <classShapeMoniker Id="745da1d5-b15c-4bea-917f-e5d656407ea1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 29.9719962565104); (5.91666666666667 : 29.9719962565104 : JumpStart); (6.08333333333333 : 29.9719962565104 : JumpEnd); (6.25 : 29.9719962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Blog/Blog_BlogTag" />
+      <nodes>
+        <classShapeMoniker Id="9fad9c49-243d-403e-876d-5924f931447f" />
+        <classShapeMoniker Id="dd3a8b83-9f50-4f74-8ebe-08087aa8fb2a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 34.3421541341146); (17.1666666666667 : 34.3421541341146 : JumpStart); (17.3333333333333 : 34.3421541341146 : JumpEnd); (17.5 : 34.3421541341146)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Contest/Contest_Clarification" />
+      <nodes>
+        <classShapeMoniker Id="5bf7fd69-7b7c-4e4d-bab6-7cbd4ccddc4d" />
+        <classShapeMoniker Id="00962128-be21-4a03-98d4-815b7e4512a0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 34.5593082682292); (17.125 : 34.9343082682292); (17.125 : 32.3189925130208); (19.5729166666667 : 32.3189925130208 : JumpStart); (19.7395833333333 : 32.3189925130208 : JumpEnd); (20.9166671666667 : 32.3189925130208 : JumpStart); (21.0833338333333 : 32.3189925130208 : JumpEnd); (22.875 : 32.3189925130208); (23.25 : 31.9439925130208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Contest/Contest_ContestProblem" />
+      <nodes>
+        <classShapeMoniker Id="5bf7fd69-7b7c-4e4d-bab6-7cbd4ccddc4d" />
+        <classShapeMoniker Id="637b9f21-2857-4c16-beb5-97fd1e166226" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10 : 34.1651025390625); (10 : 34.5232568359375); (12.6666666666667 : 34.5232568359375 : JumpStart); (12.8333333333333 : 34.5232568359375 : JumpEnd); (13.1979191666667 : 34.5232568359375 : JumpStart); (13.3645858333333 : 34.5232568359375 : JumpEnd); (14.0416666666667 : 34.5232568359375 : JumpStart); (14.2708333333333 : 34.5232568359375 : JumpEnd); (14.2916666666667 : 34.5232568359375 : JumpStart); (14.4583333333333 : 34.5232568359375 : JumpEnd); (14.75 : 34.5232568359375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Affiliation/Affiliation_Contest" />
+      <nodes>
+        <classShapeMoniker Id="c04eaced-eb79-4a70-8af5-fb713fab4788" />
+        <classShapeMoniker Id="5bf7fd69-7b7c-4e4d-bab6-7cbd4ccddc4d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 33.53125); (17.0416666666667 : 33.53125 : JumpStart); (17.2083333333333 : 33.53125 : JumpEnd); (19.5729166666667 : 33.53125 : JumpStart); (19.7395833333333 : 33.53125 : JumpEnd); (20.5 : 33.53125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Contest/Contest_ContestUser" />
+      <nodes>
+        <classShapeMoniker Id="5bf7fd69-7b7c-4e4d-bab6-7cbd4ccddc4d" />
+        <classShapeMoniker Id="05920a4e-6f31-4cab-b50b-5a32ac0b3c8f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.6562495 : 31.25); (16.6562495 : 27.1114005533854); (17.1041666666667 : 27.1114005533854 : JumpStart); (17.2708333333333 : 27.1114005533854 : JumpEnd); (18.4166666666667 : 27.1114005533854 : JumpStart); (18.5833333333333 : 27.1114005533854 : JumpEnd); (19.6666666666667 : 27.1114005533854 : JumpStart); (20.2083333333333 : 27.1114005533854 : JumpEnd); (22.5416666666667 : 27.1114005533854 : JumpStart); (23.2083333333333 : 27.1114005533854 : JumpEnd); (23.25 : 27.1114005533854)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Contest/Contest_Editorial" />
+      <nodes>
+        <classShapeMoniker Id="5bf7fd69-7b7c-4e4d-bab6-7cbd4ccddc4d" />
+        <classShapeMoniker Id="0fd5777d-0d62-4e4e-88be-1de35ab5efac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 33.2979004078776); (9 : 33.2979004078776)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FudgeDataContext/Entity/Entity_Affiliation" />
+      <nodes>
+        <classShapeMoniker Id="b546d06c-49ac-4fdb-b228-b77339a10028" />
+        <classShapeMoniker Id="c04eaced-eb79-4a70-8af5-fb713fab4788" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.25 : 34.2901025390625); (7.25 : 34.5412825520833); (12.6666666666667 : 34.5412825520833 : JumpStart); (12.8333333333333 : 34.5412825520833 : JumpEnd); (13.1979191666667 : 34.5412825520833 : JumpStart); (13.3645858333333 : 34.5412825520833 : JumpEnd); (14.0416666666667 : 34.5412825520833 : JumpStart); (14.2708333333333 : 34.5412825520833 : JumpEnd); (14.2916666666667 : 34.5412825520833 : JumpStart); (14.4583333333333 : 34.5412825520833 : JumpEnd); (14.75 : 34.5412825520833)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FudgeDataContext/Entity/Entity_Contest" />
+      <nodes>
+        <classShapeMoniker Id="b546d06c-49ac-4fdb-b228-b77339a10028" />
+        <classShapeMoniker Id="5bf7fd69-7b7c-4e4d-bab6-7cbd4ccddc4d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 32.9431469726563); (6.25 : 32.9431469726563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FudgeDataContext/Country/Country_Entity" />
+      <nodes>
+        <classShapeMoniker Id="18f67d3f-cac8-4894-bfbc-95ebc80a21c4" />
+        <classShapeMoniker Id="b546d06c-49ac-4fdb-b228-b77339a10028" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(25.25 : 24.657900390625); (30 : 24.657900390625); (30 : 25.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Event/Event_EventInvitation" />
+      <nodes>
+        <classShapeMoniker Id="faa6438b-a3b9-414a-9d64-156b77388678" />
+        <classShapeMoniker Id="4aa329e4-9bc5-40cd-a117-d295698f57e7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 32.4926982039388); (8.75 : 32.4926982039388); (8.75 : 31.0625); (11.2916666666667 : 31.0625 : JumpStart); (11.8020833333333 : 31.0625 : JumpEnd); (12.1661878974359 : 31.0625 : JumpStart); (12.3645858333333 : 31.0625 : JumpEnd); (12.6666666666667 : 31.0625 : JumpStart); (12.8333333333333 : 31.0625 : JumpEnd); (13.1666661666667 : 31.0625 : JumpStart); (13.3333328333333 : 31.0625 : JumpEnd); (13.7813034205767 : 31.0625 : JumpStart); (13.9479700872434 : 31.0625 : JumpEnd); (14.1666666666667 : 31.0625 : JumpStart); (14.3333333333333 : 31.0625 : JumpEnd); (16.5729161666667 : 31.0625 : JumpStart); (16.7395828333333 : 31.0625 : JumpEnd); (17.375 : 31.0625); (17.375 : 29.875); (18.4166666666667 : 29.875 : JumpStart); (18.5833333333333 : 29.875 : JumpEnd); (20.25 : 29.875); (20.25 : 27.875); (22.3229166666667 : 27.875 : JumpStart); (22.4895833333333 : 27.875 : JumpEnd); (22.75 : 27.875); (22.75 : 26.125); (22.9791666666667 : 26.125 : JumpStart); (23.1458333333333 : 26.125 : JumpEnd); (23.6666671666667 : 26.125 : JumpStart); (23.8333338333333 : 26.125 : JumpEnd); (24.0104142916667 : 26.125 : JumpStart); (24.1770809583333 : 26.125 : JumpEnd); (24.49999975 : 26.125); (24.49999975 : 25.1170068359375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FudgeDataContext/Entity/Entity_Event" />
+      <nodes>
+        <classShapeMoniker Id="b546d06c-49ac-4fdb-b228-b77339a10028" />
+        <classShapeMoniker Id="faa6438b-a3b9-414a-9d64-156b77388678" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 29.6354484049479); (2.79166666666667 : 29.6354484049479 : JumpStart); (2.95833333333333 : 29.6354484049479 : JumpEnd); (3.10416666666667 : 29.6354484049479 : JumpStart); (3.27083333333333 : 29.6354484049479 : JumpEnd); (3.5 : 29.6354484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Forum/Forum_Blog" />
+      <nodes>
+        <classShapeMoniker Id="5fc0ce2e-5bd1-4f99-95c4-bc41cd878f11" />
+        <classShapeMoniker Id="9fad9c49-243d-403e-876d-5924f931447f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 30.1094246074219); (2.79166666666667 : 30.1094246074219 : JumpStart); (2.95833333333333 : 30.1094246074219 : JumpEnd); (3.10416666666667 : 30.1094246074219 : JumpStart); (3.27083333333333 : 30.1094246074219 : JumpEnd); (3.375 : 30.1094246074219); (3.375 : 31.5); (5.79166666666667 : 31.5 : JumpStart); (5.95833333333333 : 31.5 : JumpEnd); (7.16666666666667 : 31.5 : JumpStart); (7.33333333333333 : 31.5 : JumpEnd); (8.66666666666667 : 31.5 : JumpStart); (8.83333333333333 : 31.5 : JumpEnd); (11.0724348974359 : 31.5 : JumpStart); (11.2391015641025 : 31.5 : JumpEnd); (11.25 : 31.5); (11.25 : 31.125); (11.2916666666667 : 31.125 : JumpStart); (11.8020833333333 : 31.125 : JumpEnd); (12.1661878974359 : 31.125 : JumpStart); (12.3645858333333 : 31.125 : JumpEnd); (12.6666666666667 : 31.125 : JumpStart); (12.8333333333333 : 31.125 : JumpEnd); (13.1666661666667 : 31.125 : JumpStart); (13.3333328333333 : 31.125 : JumpEnd); (14.1666666666667 : 31.125 : JumpStart); (14.3333333333333 : 31.125 : JumpEnd); (15.75 : 31.125); (15.75 : 31.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FudgeDataContext/Forum/Forum_Contest" />
+      <nodes>
+        <classShapeMoniker Id="5fc0ce2e-5bd1-4f99-95c4-bc41cd878f11" />
+        <classShapeMoniker Id="5bf7fd69-7b7c-4e4d-bab6-7cbd4ccddc4d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.0312525 : 25.4535953776042); (3.0312525 : 29.6354484049479); (2.95833333333333 : 29.6354484049479 : JumpStart); (2.79166666666667 : 29.6354484049479 : JumpEnd); (2.75 : 29.6354484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/ForumCategory/ForumCategory_Forum" />
+      <nodes>
+        <classShapeMoniker Id="c239d9e2-00f2-4d89-811a-04415b0827a6" />
+        <classShapeMoniker Id="5fc0ce2e-5bd1-4f99-95c4-bc41cd878f11" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 20.8854484049479); (17.25 : 20.8854484049479); (17.25 : 23.6939925130208); (19.8541666666667 : 23.6939925130208 : JumpStart); (20.1770833333333 : 23.6939925130208 : JumpEnd); (22.5416666666667 : 23.6939925130208 : JumpStart); (22.7083333333333 : 23.6939925130208 : JumpEnd); (22.7916666666667 : 23.6939925130208 : JumpStart); (22.9583333333333 : 23.6939925130208 : JumpEnd); (23 : 23.6939925130208); (23 : 25.5); (24.0104142916667 : 25.5 : JumpStart); (24.1770809583333 : 25.5 : JumpEnd); (24.4166664166667 : 25.5 : JumpStart); (24.5833330833333 : 25.5 : JumpEnd); (25.6666666666667 : 25.5 : JumpStart); (25.8333333333333 : 25.5 : JumpEnd); (26 : 25.5); (26 : 31); (26.6666671666667 : 31 : JumpStart); (26.8333338333333 : 31 : JumpEnd); (27.25 : 31); (27.25 : 31.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Article/Article_Keyword" />
+      <nodes>
+        <classShapeMoniker Id="7a506b03-2af7-4287-9b41-b3853fed91b0" />
+        <classShapeMoniker Id="9ef2c6b2-0b64-4034-ae97-054d11d74718" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 32.25); (2.94107443490112 : 32.0589255650989 : JumpStart); (3.05892556509888 : 31.9410744349011 : JumpEnd); (3.125 : 31.875); (3.125 : 30.6372630732422); (3.29166666666667 : 30.6372630732422 : JumpStart); (3.45833333333333 : 30.6372630732422 : JumpEnd); (3.5 : 30.6372630732422)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Picture/Picture_Blog" />
+      <nodes>
+        <classShapeMoniker Id="b1d7f80a-3ed8-4314-88d4-34d2d03b554e" />
+        <classShapeMoniker Id="9fad9c49-243d-403e-876d-5924f931447f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 32.9743994726563); (3.10416666666667 : 32.9743994726563 : JumpStart); (3.27083333333333 : 32.9743994726563 : JumpEnd); (3.5 : 32.9743994726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Picture/Picture_Country" />
+      <nodes>
+        <classShapeMoniker Id="b1d7f80a-3ed8-4314-88d4-34d2d03b554e" />
+        <classShapeMoniker Id="18f67d3f-cac8-4894-bfbc-95ebc80a21c4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.148439375 : 33.6362939453125); (2.148439375 : 33.9944507421875); (3.10416666666667 : 33.9944507421875 : JumpStart); (3.27083333333333 : 33.9944507421875 : JumpEnd); (6.25 : 33.9944507421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FudgeDataContext/Picture/Picture_Entity" />
+      <nodes>
+        <classShapeMoniker Id="b1d7f80a-3ed8-4314-88d4-34d2d03b554e" />
+        <classShapeMoniker Id="b546d06c-49ac-4fdb-b228-b77339a10028" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 32.9743989726563); (3 : 32.9743989726563); (3 : 31.375); (3.04166666666667 : 31.375 : JumpStart); (3.27083333333333 : 31.375 : JumpEnd); (3.29166666666667 : 31.375 : JumpStart); (3.45833333333333 : 31.375 : JumpEnd); (5.79166666666667 : 31.375 : JumpStart); (5.95833333333333 : 31.375 : JumpEnd); (7.16666666666667 : 31.375 : JumpStart); (7.33333333333333 : 31.375 : JumpEnd); (8.66666666666667 : 31.375 : JumpStart); (8.83333333333333 : 31.375 : JumpEnd); (11.125 : 31.375); (11.125 : 31); (11.2916666666667 : 31 : JumpStart); (11.8020833333333 : 31 : JumpEnd); (12.1661878974359 : 31 : JumpStart); (12.3645858333333 : 31 : JumpEnd); (13.1666661666667 : 31 : JumpStart); (13.3333328333333 : 31 : JumpEnd); (13.5936853846938 : 31 : JumpStart); (13.7603520513605 : 31 : JumpEnd); (14.0216652878606 : 31 : JumpStart); (14.3333333333333 : 31 : JumpEnd); (16.5729161666667 : 31 : JumpStart); (16.7395828333333 : 31 : JumpEnd); (17 : 31); (17 : 29.5); (17.1041666666667 : 29.5 : JumpStart); (17.2708333333333 : 29.5 : JumpEnd); (19.7916666666667 : 29.5 : JumpStart); (20.0833333333333 : 29.5 : JumpEnd); (20.1875 : 29.5); (20.1875 : 28); (22.3229166666667 : 28 : JumpStart); (22.4895833333333 : 28 : JumpEnd); (23 : 28); (23 : 26.375); (23.6666671666667 : 26.375 : JumpStart); (23.8333338333333 : 26.375 : JumpEnd); (24.093747625 : 26.375); (24.093747625 : 25.1170068359375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FudgeDataContext/Picture/Picture_Event" />
+      <nodes>
+        <classShapeMoniker Id="b1d7f80a-3ed8-4314-88d4-34d2d03b554e" />
+        <classShapeMoniker Id="faa6438b-a3b9-414a-9d64-156b77388678" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(22.5 : 31.2844555664063); (23.25 : 31.2844555664063)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Problem/Problem_ContestProblem" />
+      <nodes>
+        <classShapeMoniker Id="79a0e301-af22-47cf-849c-517a47565e47" />
+        <classShapeMoniker Id="637b9f21-2857-4c16-beb5-97fd1e166226" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(21.5 : 31.8189111328125); (21.5 : 32.1627425130208); (22.9479166666667 : 32.1627425130208 : JumpStart); (23.1145833333333 : 32.1627425130208 : JumpEnd); (25.6666666666667 : 32.1627425130208 : JumpStart); (25.8333333333333 : 32.1627425130208 : JumpEnd); (26.25 : 32.1627425130208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Problem/Problem_Keyword" />
+      <nodes>
+        <classShapeMoniker Id="79a0e301-af22-47cf-849c-517a47565e47" />
+        <classShapeMoniker Id="9ef2c6b2-0b64-4034-ae97-054d11d74718" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 30.5208968098958); (1.75 : 31.4375); (2.79166666666667 : 31.4375 : JumpStart); (2.95833333333333 : 31.4375 : JumpEnd); (3.04166666666667 : 31.4375 : JumpStart); (3.27083333333333 : 31.4375 : JumpEnd); (5.79166666666667 : 31.4375 : JumpStart); (5.95833333333333 : 31.4375 : JumpEnd); (7.16666666666667 : 31.4375 : JumpStart); (7.33333333333333 : 31.4375 : JumpEnd); (8.66666666666667 : 31.4375 : JumpStart); (8.83333333333333 : 31.4375 : JumpEnd); (11.1349348974359 : 31.4375 : JumpStart); (11.3016015641025 : 31.4375 : JumpEnd); (11.5 : 31.4375); (11.5 : 31.03125); (11.6354166666667 : 31.03125 : JumpStart); (11.8020833333333 : 31.03125 : JumpEnd); (12.1661878974359 : 31.03125 : JumpStart); (12.3645858333333 : 31.03125 : JumpEnd); (12.6666666666667 : 31.03125 : JumpStart); (12.8333333333333 : 31.03125 : JumpEnd); (13.1666661666667 : 31.03125 : JumpStart); (13.3333328333333 : 31.03125 : JumpEnd); (13.6874944026353 : 31.03125 : JumpStart); (13.8541610693019 : 31.03125 : JumpEnd); (14.1666666666667 : 31.03125 : JumpStart); (14.3333333333333 : 31.03125 : JumpEnd); (16.5729161666667 : 31.03125 : JumpStart); (16.7395828333333 : 31.03125 : JumpEnd); (17.25 : 31.03125); (17.25 : 29.8125); (18.4166666666667 : 29.8125 : JumpStart); (18.5833333333333 : 29.8125 : JumpEnd); (19.7916666666667 : 29.8125 : JumpStart); (19.9583333333333 : 29.8125 : JumpEnd); (20.125 : 29.8125); (20.125 : 30.8469550664063); (20.2291666666667 : 30.8469550664063 : JumpStart); (20.3958333333333 : 30.8469550664063 : JumpEnd); (20.5 : 30.8469550664063)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FudgeDataContext/Forum/Forum_Problem" />
+      <nodes>
+        <classShapeMoniker Id="5fc0ce2e-5bd1-4f99-95c4-bc41cd878f11" />
+        <classShapeMoniker Id="79a0e301-af22-47cf-849c-517a47565e47" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10 : 28.9631982421875); (10 : 30.8044254557292); (11.2916666666667 : 30.8044254557292 : JumpStart); (11.7708333333333 : 30.8044254557292 : JumpEnd); (11.8079882093252 : 30.8044254557292 : JumpStart); (11.9746548759918 : 30.8044254557292 : JumpEnd); (13.0065923948573 : 30.8044254557292 : JumpStart); (13.173259061524 : 30.8044254557292 : JumpEnd); (13.8260907435898 : 30.8044254557292 : JumpStart); (13.9927574102564 : 30.8044254557292 : JumpEnd); (14.1666666666667 : 30.8044254557292 : JumpStart); (14.3333333333333 : 30.8044254557292 : JumpEnd); (16.5729161666667 : 30.8044254557292 : JumpStart); (16.7395828333333 : 30.8044254557292 : JumpEnd); (16.875 : 30.8044254557292); (16.875 : 29.25); (17.1041666666667 : 29.25 : JumpStart); (17.2708333333333 : 29.25 : JumpEnd); (19.75 : 29.25); (19.75 : 28.8125005); (20.1041666666667 : 28.8125005 : JumpStart); (20.3333333333333 : 28.8125005 : JumpEnd); (20.5 : 28.8125005)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FudgeDataContext/Language/Language_Problem" />
+      <nodes>
+        <classShapeMoniker Id="404ae4c5-ddb8-465c-91e5-adf07f51ae07" />
+        <classShapeMoniker Id="79a0e301-af22-47cf-849c-517a47565e47" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.531252 : 28.9631982421875); (10.531252 : 30.8356754557292); (11.2916666666667 : 30.8356754557292 : JumpStart); (11.7395833333333 : 30.8356754557292 : JumpEnd); (12.1661878974359 : 30.8356754557292 : JumpStart); (12.3645858333333 : 30.8356754557292 : JumpEnd); (13.1004014127988 : 30.8356754557292 : JumpStart); (13.3333328333333 : 30.8356754557292 : JumpEnd); (13.8573407435898 : 30.8356754557292 : JumpStart); (14.0240074102564 : 30.8356754557292 : JumpEnd); (14.1666666666667 : 30.8356754557292 : JumpStart); (14.3333333333333 : 30.8356754557292 : JumpEnd); (16.5729161666667 : 30.8356754557292 : JumpStart); (16.7395828333333 : 30.8356754557292 : JumpEnd); (16.9375 : 30.8356754557292); (16.9375 : 29.375); (17.1041666666667 : 29.375 : JumpStart); (17.2708333333333 : 29.375 : JumpEnd); (19.7916666666667 : 29.375 : JumpStart); (19.9583333333333 : 29.375 : JumpEnd); (20 : 29.375); (20 : 29.8297277832031); (20.2291666666667 : 29.8297277832031 : JumpStart); (20.3958333333333 : 29.8297277832031 : JumpEnd); (20.5 : 29.8297277832031)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FudgeDataContext/Language/Language_Problem1" />
+      <nodes>
+        <classShapeMoniker Id="404ae4c5-ddb8-465c-91e5-adf07f51ae07" />
+        <classShapeMoniker Id="79a0e301-af22-47cf-849c-517a47565e47" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 27.9815991210938); (11.375 : 27.9815991210938); (11.375 : 31.2419254557292); (11.4166666666667 : 31.2419254557292 : JumpStart); (11.8020833333333 : 31.2419254557292 : JumpEnd); (12.1661878974359 : 31.2419254557292 : JumpStart); (12.3645858333333 : 31.2419254557292 : JumpEnd); (12.6666666666667 : 31.2419254557292 : JumpStart); (12.8333333333333 : 31.2419254557292 : JumpEnd); (14.0416666666667 : 31.2419254557292 : JumpStart); (14.2083333333333 : 31.2419254557292 : JumpEnd); (14.25 : 31.2419254557292); (14.25 : 29.6771468098958); (16.5729161666667 : 29.6771468098958 : JumpStart); (16.7395828333333 : 29.6771468098958 : JumpEnd); (16.7916666666667 : 29.6771468098958 : JumpStart); (17.0833333333333 : 29.6771468098958 : JumpEnd); (17.1041666666667 : 29.6771468098958 : JumpStart); (17.2708333333333 : 29.6771468098958 : JumpEnd); (18.5 : 29.6771468098958); (18.5 : 30)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Language/Language_ProblemSubmission" />
+      <nodes>
+        <classShapeMoniker Id="404ae4c5-ddb8-465c-91e5-adf07f51ae07" />
+        <classShapeMoniker Id="1bc836f8-170c-4659-8243-c85b38679d64" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(22.5 : 29.7652498372396); (25.75 : 29.7652498372396); (25.75 : 24.5112939453125); (26.6354146666667 : 24.5112939453125 : JumpStart); (26.8020813333333 : 24.5112939453125 : JumpEnd); (27.25 : 24.5112939453125); (27.25 : 24.1362939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Problem/Problem_ProblemTag" />
+      <nodes>
+        <classShapeMoniker Id="79a0e301-af22-47cf-849c-517a47565e47" />
+        <classShapeMoniker Id="96af36ac-afdb-437d-b957-620a201296fe" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.09375 : 26.625); (1.09375 : 20.46875); (14.75 : 20.46875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Rating/Rating_Article" />
+      <nodes>
+        <classShapeMoniker Id="4f938505-2ceb-4b48-a2fb-448f3c07abe2" />
+        <classShapeMoniker Id="7a506b03-2af7-4287-9b41-b3853fed91b0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 27.3181469726563); (2.94791916666667 : 27.3181469726563 : JumpStart); (3.11458583333333 : 27.3181469726563 : JumpEnd); (4.5 : 27.3181469726563); (4.5 : 28.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Rating/Rating_Blog" />
+      <nodes>
+        <classShapeMoniker Id="4f938505-2ceb-4b48-a2fb-448f3c07abe2" />
+        <classShapeMoniker Id="9fad9c49-243d-403e-876d-5924f931447f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.05469075 : 26.625); (2.05469075 : 26.375); (2.35026404166667 : 26.375 : JumpStart); (2.51693070833333 : 26.375 : JumpEnd); (2.94791916666667 : 26.375 : JumpStart); (3.11458583333333 : 26.375 : JumpEnd); (5.66666666666667 : 26.375 : JumpStart); (5.83333333333333 : 26.375 : JumpEnd); (5.91666666666667 : 26.375 : JumpStart); (6.08333333333333 : 26.375 : JumpEnd); (7.16666666666667 : 26.375 : JumpStart); (7.33333333333333 : 26.375 : JumpEnd); (8.66666666666667 : 26.375 : JumpStart); (8.83333333333333 : 26.375 : JumpEnd); (9.65104016666667 : 26.375 : JumpStart); (9.81770683333333 : 26.375 : JumpEnd); (10.4479186666667 : 26.375 : JumpStart); (10.6145853333333 : 26.375 : JumpEnd); (11.5 : 26.375); (11.5 : 24.875); (11.5416666666667 : 24.875 : JumpStart); (11.7083333333333 : 24.875 : JumpEnd); (11.8697879166667 : 24.875 : JumpStart); (12.0364545833333 : 24.875 : JumpEnd); (12.1354141666667 : 24.875 : JumpStart); (12.3020808333333 : 24.875 : JumpEnd); (12.4010404166667 : 24.875 : JumpStart); (12.5677070833333 : 24.875 : JumpEnd); (13.1979186666667 : 24.875 : JumpStart); (13.3645853333333 : 24.875 : JumpEnd); (13.4635451666667 : 24.875 : JumpStart); (13.7630250833333 : 24.875 : JumpEnd); (13.9166666666667 : 24.875 : JumpStart); (14.2083333333333 : 24.875 : JumpEnd); (14.25 : 24.875); (14.25 : 26.75); (14.4166666666667 : 26.75 : JumpStart); (14.5833333333333 : 26.75 : JumpEnd); (17.1041666666667 : 26.75 : JumpStart); (17.2708333333333 : 26.75 : JumpEnd); (18.4166666666667 : 26.75 : JumpStart); (18.5833333333333 : 26.75 : JumpEnd); (19.75 : 26.75); (19.75 : 27.3994527766927); (19.8541666666667 : 27.3994527766927 : JumpStart); (20.0208333333333 : 27.3994527766927 : JumpEnd); (22.3229166666667 : 27.3994527766927 : JumpStart); (22.4895833333333 : 27.3994527766927 : JumpEnd); (22.6666666666667 : 27.3994527766927 : JumpStart); (22.8333333333333 : 27.3994527766927 : JumpEnd); (22.9166666666667 : 27.3994527766927 : JumpStart); (23.0833333333333 : 27.3994527766927 : JumpEnd); (23.25 : 27.3994527766927)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Rating/Rating_Editorial" />
+      <nodes>
+        <classShapeMoniker Id="4f938505-2ceb-4b48-a2fb-448f3c07abe2" />
+        <classShapeMoniker Id="0fd5777d-0d62-4e4e-88be-1de35ab5efac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.433597375 : 26.625); (2.433597375 : 25.7989005533854); (2.94791916666667 : 25.7989005533854 : JumpStart); (3.11458583333333 : 25.7989005533854 : JumpEnd); (5.66666666666667 : 25.7989005533854 : JumpStart); (5.83333333333333 : 25.7989005533854 : JumpEnd); (5.91666666666667 : 25.7989005533854 : JumpStart); (6.08333333333333 : 25.7989005533854 : JumpEnd); (7.16666666666667 : 25.7989005533854 : JumpStart); (7.33333333333333 : 25.7989005533854 : JumpEnd); (8.66666666666667 : 25.7989005533854 : JumpStart); (8.83333333333333 : 25.7989005533854 : JumpEnd); (9.65104016666667 : 25.7989005533854 : JumpStart); (9.81770683333333 : 25.7989005533854 : JumpEnd); (10.4479186666667 : 25.7989005533854 : JumpStart); (10.6145853333333 : 25.7989005533854 : JumpEnd); (11.25 : 25.7989005533854); (11.25 : 24.625); (11.4791666666667 : 24.625 : JumpStart); (11.6458333333333 : 24.625 : JumpEnd); (11.8697879166667 : 24.625 : JumpStart); (12.0364545833333 : 24.625 : JumpEnd); (12.1354141666667 : 24.625 : JumpStart); (12.3020808333333 : 24.625 : JumpEnd); (12.4010404166667 : 24.625 : JumpStart); (12.5677070833333 : 24.625 : JumpEnd); (13.1979186666667 : 24.625 : JumpStart); (13.3645853333333 : 24.625 : JumpEnd); (13.4635451666667 : 24.625 : JumpStart); (13.7630250833333 : 24.625 : JumpEnd); (14 : 24.625); (14 : 26.2131982421875); (14.0416666666667 : 26.2131982421875 : JumpStart); (14.5833333333333 : 26.2131982421875 : JumpEnd); (17.1041666666667 : 26.2131982421875 : JumpStart); (17.2708333333333 : 26.2131982421875 : JumpEnd); (19.875 : 26.2131982421875); (19.875 : 25.7989005533854); (20.25 : 25.7989005533854)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Rating/Rating_Post" />
+      <nodes>
+        <classShapeMoniker Id="4f938505-2ceb-4b48-a2fb-448f3c07abe2" />
+        <classShapeMoniker Id="e88ea64b-489d-4ed9-978a-2d3a662153a3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.50000025 : 28.0112939453125); (1.50000025 : 28.5); (2.16666616666667 : 28.5 : JumpStart); (2.33333283333333 : 28.5 : JumpEnd); (2.875 : 28.5); (2.875 : 31.5625); (2.91666666666667 : 31.5625 : JumpStart); (3.33333333333333 : 31.5625 : JumpEnd); (5.79166666666667 : 31.5625 : JumpStart); (5.95833333333333 : 31.5625 : JumpEnd); (7.16666666666667 : 31.5625 : JumpStart); (7.33333333333333 : 31.5625 : JumpEnd); (8.66666666666667 : 31.5625 : JumpStart); (8.83333333333333 : 31.5625 : JumpEnd); (11.0099348974359 : 31.5625 : JumpStart); (11.1766015641025 : 31.5625 : JumpEnd); (11.625 : 31.5625); (11.625 : 30.96875); (11.6354166666667 : 30.96875 : JumpStart); (11.8020833333333 : 30.96875 : JumpEnd); (12.1661878974359 : 30.96875 : JumpStart); (12.3645858333333 : 30.96875 : JumpEnd); (13.1666661666667 : 30.96875 : JumpStart); (13.3333328333333 : 30.96875 : JumpEnd); (13.4998763667524 : 30.96875 : JumpStart); (13.666543033419 : 30.96875 : JumpEnd); (13.9904152878606 : 30.96875 : JumpStart); (14.1570819545272 : 30.96875 : JumpEnd); (14.1666666666667 : 30.96875 : JumpStart); (14.3333333333333 : 30.96875 : JumpEnd); (16.5729161666667 : 30.96875 : JumpStart); (16.7395828333333 : 30.96875 : JumpEnd); (17.3125 : 30.96875); (17.3125 : 29.9375); (19.875 : 29.9375); (19.875 : 28.8125005); (20.1041666666667 : 28.8125005 : JumpStart); (20.3333333333333 : 28.8125005 : JumpEnd); (20.5 : 28.8125005)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FudgeDataContext/Rating/Rating_Problem" />
+      <nodes>
+        <classShapeMoniker Id="4f938505-2ceb-4b48-a2fb-448f3c07abe2" />
+        <classShapeMoniker Id="79a0e301-af22-47cf-849c-517a47565e47" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 32.8938687565104); (17.0416666666667 : 32.8938687565104 : JumpStart); (17.2083333333333 : 32.8938687565104 : JumpEnd); (19.5729166666667 : 32.8938687565104 : JumpStart); (19.7395833333333 : 32.8938687565104 : JumpEnd); (20.25 : 32.8938687565104); (20.25 : 32.75); (20.9166671666667 : 32.75 : JumpStart); (21.0833338333333 : 32.75 : JumpEnd); (22.7916666666667 : 32.75 : JumpStart); (22.9583333333333 : 32.75 : JumpEnd); (25.75 : 32.75); (25.75 : 31.125); (26.7500005 : 31.125); (26.7500005 : 29.6362125651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Contest/Contest_Run" />
+      <nodes>
+        <classShapeMoniker Id="5bf7fd69-7b7c-4e4d-bab6-7cbd4ccddc4d" />
+        <classShapeMoniker Id="bec57808-de8f-4eac-8478-4230c32c157b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.531252 : 27); (10.531252 : 25); (11.1666666666667 : 25 : JumpStart); (11.3333333333333 : 25 : JumpEnd); (11.4166666666667 : 25 : JumpStart); (11.7083333333333 : 25 : JumpEnd); (11.8697879166667 : 25 : JumpStart); (12.0364545833333 : 25 : JumpEnd); (12.1354141666667 : 25 : JumpStart); (12.3020808333333 : 25 : JumpEnd); (12.4010404166667 : 25 : JumpStart); (12.5677070833333 : 25 : JumpEnd); (12.9322926666667 : 25 : JumpStart); (13.0989593333333 : 25 : JumpEnd); (13.1979186666667 : 25 : JumpStart); (13.3645853333333 : 25 : JumpEnd); (13.4635451666667 : 25 : JumpStart); (13.7630250833333 : 25 : JumpEnd); (13.9166666666667 : 25 : JumpStart); (14.4583333333333 : 25 : JumpEnd); (14.5 : 25); (14.5 : 26.875); (17.1041666666667 : 26.875 : JumpStart); (17.2708333333333 : 26.875 : JumpEnd); (18.4166666666667 : 26.875 : JumpStart); (18.5833333333333 : 26.875 : JumpEnd); (19.6666666666667 : 26.875 : JumpStart); (19.8333333333333 : 26.875 : JumpEnd); (20 : 26.875); (20 : 27.2228011067708); (22.6666666666667 : 27.2228011067708 : JumpStart); (22.8333333333333 : 27.2228011067708 : JumpEnd); (22.8541666666667 : 27.2228011067708 : JumpStart); (23.0833333333333 : 27.2228011067708 : JumpEnd); (23.125 : 27.2228011067708); (23.125 : 26.5); (23.6666671666667 : 26.5 : JumpStart); (23.8333338333333 : 26.5 : JumpEnd); (25.6666666666667 : 26.5 : JumpStart); (25.8333333333333 : 26.5 : JumpEnd); (25.875 : 26.5); (25.875 : 27.6931062825521); (25.9166666666667 : 27.6931062825521 : JumpStart); (26.2083333333333 : 27.6931062825521 : JumpEnd); (26.25 : 27.6931062825521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Language/Language_Run" />
+      <nodes>
+        <classShapeMoniker Id="404ae4c5-ddb8-465c-91e5-adf07f51ae07" />
+        <classShapeMoniker Id="bec57808-de8f-4eac-8478-4230c32c157b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(22.5 : 29.2396061197917); (25.9166666666667 : 29.2396061197917 : JumpStart); (26.0833333333333 : 29.2396061197917 : JumpEnd); (26.25 : 29.2396061197917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Problem/Problem_Run" />
+      <nodes>
+        <classShapeMoniker Id="79a0e301-af22-47cf-849c-517a47565e47" />
+        <classShapeMoniker Id="bec57808-de8f-4eac-8478-4230c32c157b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.675784125 : 26.625); (1.675784125 : 26.125); (2.35026404166667 : 26.125 : JumpStart); (2.51693070833333 : 26.125 : JumpEnd); (2.94791916666667 : 26.125 : JumpStart); (3.11458583333333 : 26.125 : JumpEnd); (5.66666666666667 : 26.125 : JumpStart); (5.83333333333333 : 26.125 : JumpEnd); (5.91666666666667 : 26.125 : JumpStart); (6.08333333333333 : 26.125 : JumpEnd); (7.16666666666667 : 26.125 : JumpStart); (7.33333333333333 : 26.125 : JumpEnd); (8.66666666666667 : 26.125 : JumpStart); (8.83333333333333 : 26.125 : JumpEnd); (9.65104016666667 : 26.125 : JumpStart); (9.81770683333333 : 26.125 : JumpEnd); (10.4479186666667 : 26.125 : JumpStart); (10.6145853333333 : 26.125 : JumpEnd); (11.4166666666667 : 26.125 : JumpStart); (11.5833333333333 : 26.125 : JumpEnd); (11.625 : 26.125); (11.625 : 24.75); (11.8697879166667 : 24.75 : JumpStart); (12.0364545833333 : 24.75 : JumpEnd); (12.1354141666667 : 24.75 : JumpStart); (12.3020808333333 : 24.75 : JumpEnd); (12.4010404166667 : 24.75 : JumpStart); (12.5677070833333 : 24.75 : JumpEnd); (13.1979186666667 : 24.75 : JumpStart); (13.3645853333333 : 24.75 : JumpEnd); (13.4635451666667 : 24.75 : JumpStart); (13.7630250833333 : 24.75 : JumpEnd); (13.9166666666667 : 24.75 : JumpStart); (14.2083333333333 : 24.75 : JumpEnd); (14.375 : 24.75); (14.375 : 26.625); (14.4166666666667 : 26.625 : JumpStart); (14.5833333333333 : 26.625 : JumpEnd); (17.1041666666667 : 26.625 : JumpStart); (17.2708333333333 : 26.625 : JumpEnd); (18.4166666666667 : 26.625 : JumpStart); (18.5833333333333 : 26.625 : JumpEnd); (19.8541666666667 : 26.625 : JumpStart); (20.0208333333333 : 26.625 : JumpEnd); (20.125 : 26.625); (20.125 : 27.2853011067708); (22.3229166666667 : 27.2853011067708 : JumpStart); (22.4895833333333 : 27.2853011067708 : JumpEnd); (22.6666666666667 : 27.2853011067708 : JumpStart); (22.8333333333333 : 27.2853011067708 : JumpEnd); (22.875 : 27.2853011067708); (22.875 : 26.25); (22.9791666666667 : 26.25 : JumpStart); (23.1458333333333 : 26.25 : JumpEnd); (23.6666671666667 : 26.25 : JumpStart); (23.8333338333333 : 26.25 : JumpEnd); (24.0104142916667 : 26.25 : JumpStart); (24.1770809583333 : 26.25 : JumpEnd); (25.6666666666667 : 26.25 : JumpStart); (25.8333333333333 : 26.25 : JumpEnd); (25.9166666666667 : 26.25 : JumpStart); (26.0833333333333 : 26.25 : JumpEnd); (26.125 : 26.25); (26.125 : 28.4663562011719); (26.25 : 28.4663562011719)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Rating/Rating_Run" />
+      <nodes>
+        <classShapeMoniker Id="4f938505-2ceb-4b48-a2fb-448f3c07abe2" />
+        <classShapeMoniker Id="bec57808-de8f-4eac-8478-4230c32c157b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.65625 : 37.375); (19.65625 : 31.3641850996094); (20.2291666666667 : 31.3641850996094 : JumpStart); (20.3958333333333 : 31.3641850996094 : JumpEnd); (20.5 : 31.3641850996094)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FudgeDataContext/Source/Source_Problem" />
+      <nodes>
+        <classShapeMoniker Id="274ba8d6-47b5-42da-9885-a31aecd7f3bd" />
+        <classShapeMoniker Id="79a0e301-af22-47cf-849c-517a47565e47" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 21.8854484049479); (7.25 : 21.8854484049479); (7.25 : 29.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Tag/Tag_BlogTag" />
+      <nodes>
+        <classShapeMoniker Id="f2a0ea30-6422-4762-8155-f59d286c364c" />
+        <classShapeMoniker Id="dd3a8b83-9f50-4f74-8ebe-08087aa8fb2a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 21.411472202474); (9.65104016666667 : 21.411472202474 : JumpStart); (9.81770683333333 : 21.411472202474 : JumpEnd); (13.5963584166667 : 21.411472202474 : JumpStart); (13.7630250833333 : 21.411472202474 : JumpEnd); (14.5 : 21.411472202474); (14.5 : 22.0208968098958); (16.5729166666667 : 22.0208968098958 : JumpStart); (16.7395833333333 : 22.0208968098958 : JumpEnd); (17 : 22.0208968098958); (17 : 23.4054996744792); (17.1666666666667 : 23.4054996744792 : JumpStart); (17.4583333333333 : 23.4054996744792 : JumpEnd); (19.75 : 23.4054996744792); (19.75 : 21.75); (23.0416666666667 : 21.75 : JumpStart); (23.2083333333333 : 21.75 : JumpEnd); (24.5 : 21.75); (24.5 : 21.9728011067708); (27.25 : 21.9728011067708); (27.25 : 22.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Tag/Tag_ProblemTag" />
+      <nodes>
+        <classShapeMoniker Id="f2a0ea30-6422-4762-8155-f59d286c364c" />
+        <classShapeMoniker Id="96af36ac-afdb-437d-b957-620a201296fe" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.20552987154447 : 22.7708968098958); (4.20552987154447 : 23.0208968098958); (4.80849251552484 : 23.0208968098958); (4.80849251552484 : 22.7708968098958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Tag/Tag_Tag" />
+      <nodes>
+        <classShapeMoniker Id="f2a0ea30-6422-4762-8155-f59d286c364c" />
+        <classShapeMoniker Id="f2a0ea30-6422-4762-8155-f59d286c364c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.75 : 34.4247054036458); (12.75 : 34.8093082682292); (13.1979191666667 : 34.8093082682292 : JumpStart); (13.3645858333333 : 34.8093082682292 : JumpEnd); (14.0416666666667 : 34.8093082682292 : JumpStart); (14.2708333333333 : 34.8093082682292 : JumpEnd); (14.2916666666667 : 34.8093082682292 : JumpStart); (14.4583333333333 : 34.8093082682292 : JumpEnd); (16.9166666666667 : 34.8093082682292 : JumpStart); (17.2083333333333 : 34.8093082682292 : JumpEnd); (17.25 : 34.8093082682292); (17.25 : 33.8281275); (19.5729166666667 : 33.8281275 : JumpStart); (19.7395833333333 : 33.8281275 : JumpEnd); (20.5 : 33.8281275)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Team/Team_ContestUser" />
+      <nodes>
+        <classShapeMoniker Id="a52ce8f9-127f-45d1-93bc-b9bdcef6d105" />
+        <classShapeMoniker Id="05920a4e-6f31-4cab-b50b-5a32ac0b3c8f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.75 : 31.5); (12.75 : 30.9294254557292); (13.1666661666667 : 30.9294254557292 : JumpStart); (13.3333328333333 : 30.9294254557292 : JumpEnd); (13.3818284666231 : 30.9294254557292 : JumpStart); (13.5484951332898 : 30.9294254557292 : JumpEnd); (13.9510907435898 : 30.9294254557292 : JumpStart); (14.1177574102564 : 30.9294254557292 : JumpEnd); (14.1666666666667 : 30.9294254557292 : JumpStart); (14.3333333333333 : 30.9294254557292 : JumpEnd); (16.5729161666667 : 30.9294254557292 : JumpStart); (16.7395828333333 : 30.9294254557292 : JumpEnd); (17.1875 : 30.9294254557292); (17.1875 : 23.8189925130208); (19.8541666666667 : 23.8189925130208 : JumpStart); (20.1770833333333 : 23.8189925130208 : JumpEnd); (22.625 : 23.8189925130208); (22.625 : 22.8469967565104); (23.0416666666667 : 22.8469967565104 : JumpStart); (23.2083333333333 : 22.8469967565104 : JumpEnd); (23.25 : 22.8469967565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Team/Team_Event" />
+      <nodes>
+        <classShapeMoniker Id="a52ce8f9-127f-45d1-93bc-b9bdcef6d105" />
+        <classShapeMoniker Id="faa6438b-a3b9-414a-9d64-156b77388678" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 32.8950512695313); (11.75 : 32.8950512695313)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Affiliation/Affiliation_Team" />
+      <nodes>
+        <classShapeMoniker Id="c04eaced-eb79-4a70-8af5-fb713fab4788" />
+        <classShapeMoniker Id="a52ce8f9-127f-45d1-93bc-b9bdcef6d105" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.085934375 : 33.6362939453125); (1.085934375 : 34.3886539713542); (1.40104041666667 : 34.3886539713542 : JumpStart); (1.56770708333333 : 34.3886539713542 : JumpEnd); (3.10416666666667 : 34.3886539713542 : JumpStart); (3.27083333333333 : 34.3886539713542 : JumpEnd); (7.16666666666667 : 34.3886539713542 : JumpStart); (7.33333333333333 : 34.3886539713542 : JumpEnd); (9.91666666666667 : 34.3886539713542 : JumpStart); (10.0833333333333 : 34.3886539713542 : JumpEnd); (11.75 : 34.3886539713542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FudgeDataContext/Picture/Picture_Team" />
+      <nodes>
+        <classShapeMoniker Id="b1d7f80a-3ed8-4314-88d4-34d2d03b554e" />
+        <classShapeMoniker Id="a52ce8f9-127f-45d1-93bc-b9bdcef6d105" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.2812525 : 34.4247054036458); (13.2812525 : 36.03125); (14.0416666666667 : 36.03125 : JumpStart); (14.2708333333333 : 36.03125 : JumpEnd); (19.5729166666667 : 36.03125 : JumpStart); (19.7395833333333 : 36.03125 : JumpEnd); (20.0416666666667 : 36.03125 : JumpStart); (20.2083333333333 : 36.03125 : JumpEnd); (20.5 : 36.03125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Team/Team_TeamUser" />
+      <nodes>
+        <classShapeMoniker Id="a52ce8f9-127f-45d1-93bc-b9bdcef6d105" />
+        <classShapeMoniker Id="81f79ece-0603-461f-a197-6e6b8e16e66c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(22.5 : 31.8189111328125); (22.875 : 32.1939111328125); (22.875 : 34.0104484049479); (23.25 : 34.0104484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Problem/Problem_TestCase" />
+      <nodes>
+        <classShapeMoniker Id="79a0e301-af22-47cf-849c-517a47565e47" />
+        <classShapeMoniker Id="c547e1f2-7aa9-4acd-bac3-f23759b74301" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(27.75 : 29.6362125651042); (27.75 : 30.3493587825521); (29 : 30.3493587825521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Run/Run_TestRun" />
+      <nodes>
+        <classShapeMoniker Id="bec57808-de8f-4eac-8478-4230c32c157b" />
+        <classShapeMoniker Id="2e2bb7ee-0780-4f2b-874d-b7cebf6f5ea1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(25.25 : 34.0104484049479); (30 : 34.0104484049479); (30 : 31.3381982421875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/TestCase/TestCase_TestRun" />
+      <nodes>
+        <classShapeMoniker Id="c547e1f2-7aa9-4acd-bac3-f23759b74301" />
+        <classShapeMoniker Id="2e2bb7ee-0780-4f2b-874d-b7cebf6f5ea1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.4676923076923 : 23.0304996744792); (19.6910744349011 : 23.253881801688 : JumpStart); (19.8089255650989 : 23.3717329318858 : JumpEnd); (19.9375 : 23.5003073667869); (19.9375 : 27.75); (22.3229166666667 : 27.75 : JumpStart); (22.4895833333333 : 27.75 : JumpEnd); (22.6666666666667 : 27.75 : JumpStart); (22.8333333333333 : 27.75 : JumpEnd); (22.9166666666667 : 27.75 : JumpStart); (23.0833333333333 : 27.75 : JumpEnd); (23.25 : 27.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Topic/Topic_Editorial" />
+      <nodes>
+        <classShapeMoniker Id="aa211bd8-2e65-4b5f-958d-03d98ed5fa9a" />
+        <classShapeMoniker Id="0fd5777d-0d62-4e4e-88be-1de35ab5efac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.5 : 22.9511771914062); (17.3333333333333 : 22.9511771914062 : JumpStart); (17.1666666666667 : 22.9511771914062 : JumpEnd); (17.0833333333333 : 22.9511771914062 : JumpStart); (16.9166666666667 : 22.9511771914062 : JumpEnd); (16.7395833333333 : 22.9511771914062 : JumpStart); (16.5729166666667 : 22.9511771914062 : JumpEnd); (13.7630250833333 : 22.9511771914062 : JumpStart); (13.5963584166667 : 22.9511771914062 : JumpEnd); (12.5677070833333 : 22.9511771914062 : JumpStart); (12.4010404166667 : 22.9511771914062 : JumpEnd); (11.6458333333333 : 22.9511771914062 : JumpStart); (11.4791666666667 : 22.9511771914062 : JumpEnd); (9.81770683333333 : 22.9511771914062 : JumpStart); (9.65104016666667 : 22.9511771914062 : JumpEnd); (7.33333333333333 : 22.9511771914062 : JumpStart); (7.16666666666667 : 22.9511771914062 : JumpEnd); (6 : 22.9511771914062); (6 : 31.125); (7.25 : 31.125); (7.25 : 31.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FudgeDataContext/Topic/Topic_Entity" />
+      <nodes>
+        <classShapeMoniker Id="aa211bd8-2e65-4b5f-958d-03d98ed5fa9a" />
+        <classShapeMoniker Id="b546d06c-49ac-4fdb-b228-b77339a10028" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.5 : 22.09375); (19.6666666666667 : 22.09375 : JumpStart); (19.8333333333333 : 22.09375 : JumpEnd); (23.0416666666667 : 22.09375 : JumpStart); (23.2083333333333 : 22.09375 : JumpEnd); (23.25 : 22.09375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Topic/Topic_Event" />
+      <nodes>
+        <classShapeMoniker Id="aa211bd8-2e65-4b5f-958d-03d98ed5fa9a" />
+        <classShapeMoniker Id="faa6438b-a3b9-414a-9d64-156b77388678" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.5 : 22.9658832898638); (20.09375 : 23.5596332898638); (20.09375 : 25.1806982766927); (20.25 : 25.1806982766927)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Topic/Topic_Post" />
+      <nodes>
+        <classShapeMoniker Id="aa211bd8-2e65-4b5f-958d-03d98ed5fa9a" />
+        <classShapeMoniker Id="e88ea64b-489d-4ed9-978a-2d3a662153a3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.5 : 21.3125005); (23.125 : 21.3125005); (23.125 : 25.3670068359375); (24.0104142916667 : 25.3670068359375 : JumpStart); (24.1770809583333 : 25.3670068359375 : JumpEnd); (24.4166664166667 : 25.3670068359375 : JumpStart); (24.5833330833333 : 25.3670068359375 : JumpEnd); (25.6666666666667 : 25.3670068359375 : JumpStart); (25.8333333333333 : 25.3670068359375 : JumpEnd); (26.6354146666667 : 25.3670068359375 : JumpStart); (26.8020813333333 : 25.3670068359375 : JumpEnd); (27.4843735 : 25.3670068359375); (27.4843735 : 25.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Topic/Topic_Run" />
+      <nodes>
+        <classShapeMoniker Id="aa211bd8-2e65-4b5f-958d-03d98ed5fa9a" />
+        <classShapeMoniker Id="bec57808-de8f-4eac-8478-4230c32c157b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.5 : 22.2420447760416); (17.3333333333333 : 22.2420447760416 : JumpStart); (17.1666666666667 : 22.2420447760416 : JumpEnd); (17.0833333333333 : 22.2420447760416 : JumpStart); (16.9166666666667 : 22.2420447760416 : JumpEnd); (16.7395833333333 : 22.2420447760416 : JumpStart); (16.5729166666667 : 22.2420447760416 : JumpEnd); (13.7630250833333 : 22.2420447760416 : JumpStart); (13.5963584166667 : 22.2420447760416 : JumpEnd); (11.5625 : 22.2420447760416); (11.5625 : 31.3125); (11.6354166666667 : 31.3125 : JumpStart); (11.8020833333333 : 31.3125 : JumpEnd); (12.1661878974359 : 31.3125 : JumpStart); (12.3328545641025 : 31.3125 : JumpEnd); (12.6666666666667 : 31.3125 : JumpStart); (12.8333333333333 : 31.3125 : JumpEnd); (13.281252 : 31.3125); (13.281252 : 31.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Topic/Topic_Team" />
+      <nodes>
+        <classShapeMoniker Id="aa211bd8-2e65-4b5f-958d-03d98ed5fa9a" />
+        <classShapeMoniker Id="a52ce8f9-127f-45d1-93bc-b9bdcef6d105" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.2499995 : 28.75); (2.2499995 : 28.2612939453125); (2.94791916666667 : 28.2612939453125 : JumpStart); (3.14518437089343 : 28.2612939453125 : JumpEnd); (4.41666666666667 : 28.2612939453125 : JumpStart); (4.58333333333333 : 28.2612939453125 : JumpEnd); (5.75 : 28.2612939453125); (5.75 : 22.8093507083333); (7.16666666666667 : 22.8093507083333 : JumpStart); (7.33333333333333 : 22.8093507083333 : JumpEnd); (9.65104016666667 : 22.8093507083333 : JumpStart); (9.81770683333333 : 22.8093507083333 : JumpEnd); (11.4791666666667 : 22.8093507083333 : JumpStart); (11.6458333333333 : 22.8093507083333 : JumpEnd); (12.4010404166667 : 22.8093507083333 : JumpStart); (12.5677070833333 : 22.8093507083333 : JumpEnd); (13.5963584166667 : 22.8093507083333 : JumpStart); (13.7630250833333 : 22.8093507083333 : JumpEnd); (16.5729166666667 : 22.8093507083333 : JumpStart); (16.7395833333333 : 22.8093507083333 : JumpEnd); (16.9166666666667 : 22.8093507083333 : JumpStart); (17.0833333333333 : 22.8093507083333 : JumpEnd); (17.1666666666667 : 22.8093507083333 : JumpStart); (17.3333333333333 : 22.8093507083333 : JumpEnd); (17.5 : 22.8093507083333)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Forum/Forum_Topic" />
+      <nodes>
+        <classShapeMoniker Id="5fc0ce2e-5bd1-4f99-95c4-bc41cd878f11" />
+        <classShapeMoniker Id="aa211bd8-2e65-4b5f-958d-03d98ed5fa9a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.5 : 22.5766891449319); (20.25 : 22.5766891449319)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Topic/Topic_TopicSubscription" />
+      <nodes>
+        <classShapeMoniker Id="aa211bd8-2e65-4b5f-958d-03d98ed5fa9a" />
+        <classShapeMoniker Id="759efe29-8ec5-4245-af14-8e559ac415bc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 26.9403214863281); (2.94791916666667 : 26.9403214863281 : JumpStart); (3.11458583333333 : 26.9403214863281 : JumpEnd); (5.66666666666667 : 26.9403214863281 : JumpStart); (5.83333333333333 : 26.9403214863281 : JumpEnd); (5.91666666666667 : 26.9403214863281 : JumpStart); (6.08333333333333 : 26.9403214863281 : JumpEnd); (7.16666666666667 : 26.9403214863281 : JumpStart); (7.33333333333333 : 26.9403214863281 : JumpEnd); (8.75 : 26.9403214863281); (8.75 : 24.5); (9.65104016666667 : 24.5 : JumpStart); (9.81770683333333 : 24.5 : JumpEnd); (11.4791666666667 : 24.5 : JumpStart); (11.6458333333333 : 24.5 : JumpEnd); (11.8697879166667 : 24.5 : JumpStart); (12.0364545833333 : 24.5 : JumpEnd); (12.1354141666667 : 24.5 : JumpStart); (12.3020808333333 : 24.5 : JumpEnd); (12.4010404166667 : 24.5 : JumpStart); (12.5677070833333 : 24.5 : JumpEnd); (13.1979186666667 : 24.5 : JumpStart); (13.3645853333333 : 24.5 : JumpEnd); (13.4635451666667 : 24.5 : JumpStart); (13.7630250833333 : 24.5 : JumpEnd); (14.125 : 24.5); (14.125 : 26.3381982421875); (14.1666666666667 : 26.3381982421875 : JumpStart); (14.5833333333333 : 26.3381982421875 : JumpEnd); (17.1041666666667 : 26.3381982421875 : JumpStart); (17.2708333333333 : 26.3381982421875 : JumpEnd); (18.5 : 26.3381982421875); (18.5 : 27.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Rating/Rating_UserRating" />
+      <nodes>
+        <classShapeMoniker Id="4f938505-2ceb-4b48-a2fb-448f3c07abe2" />
+        <classShapeMoniker Id="d3e6541e-2745-4a73-ab4b-1824a0b74b55" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.21 : 30.7419254557292); (11.71875 : 30.8382706095753); (11.71875 : 32.2287736347656); (11 : 32.2287736347656)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_Affiliation" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="c04eaced-eb79-4a70-8af5-fb713fab4788" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 25.7408471679688); (13.7916666666667 : 25.7408471679688 : JumpStart); (13.9583333333333 : 25.7408471679688 : JumpEnd); (14.0416666666667 : 25.7408471679688 : JumpStart); (14.5833333333333 : 25.7408471679688 : JumpEnd); (17.5 : 25.7408471679688)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_ArticleChange" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="745da1d5-b15c-4bea-917f-e5d656407ea1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.75 : 29.1690991210938); (11.6458333333333 : 29.1690991210938 : JumpStart); (11.2916666666667 : 29.1690991210938 : JumpEnd); (10.6145853333333 : 29.1690991210938 : JumpStart); (10.4479186666667 : 29.1690991210938 : JumpEnd); (10.0833333333333 : 29.1690991210938 : JumpStart); (9.91666666666667 : 29.1690991210938 : JumpEnd); (7.33333333333333 : 29.1690991210938 : JumpStart); (7.16666666666667 : 29.1690991210938 : JumpEnd); (6.08333333333333 : 29.1690991210938 : JumpStart); (5.91666666666667 : 29.1690991210938 : JumpEnd); (5.5 : 29.1690991210938)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_Blog" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="9fad9c49-243d-403e-876d-5924f931447f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 28.2135734049479); (14 : 28.2135734049479); (14 : 29.7083968098958); (16.5729161666667 : 29.7083968098958 : JumpStart); (16.7395828333333 : 29.7083968098958 : JumpEnd); (16.7916666666667 : 29.7083968098958 : JumpStart); (17.0833333333333 : 29.7083968098958 : JumpEnd); (17.1041666666667 : 29.7083968098958 : JumpStart); (17.2708333333333 : 29.7083968098958 : JumpEnd); (19.7916666666667 : 29.7083968098958 : JumpStart); (20.0833333333333 : 29.7083968098958 : JumpEnd); (20.3125 : 29.7083968098958); (20.3125 : 32.0689111328125); (21.0000005 : 32.0689111328125); (21.0000005 : 33)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_ContestUser" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="05920a4e-6f31-4cab-b50b-5a32ac0b3c8f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 27.450534202474); (14.25 : 27.450534202474); (14.25 : 27); (17.1041666666667 : 27 : JumpStart); (17.2708333333333 : 27 : JumpEnd); (18.4166666666667 : 27 : JumpStart); (18.5833333333333 : 27 : JumpEnd); (19.625 : 27); (19.625 : 27.2071761067708); (19.6666666666667 : 27.2071761067708 : JumpStart); (20.0208333333333 : 27.2071761067708 : JumpEnd); (22.625 : 27.2071761067708); (22.625 : 26); (22.9791666666667 : 26 : JumpStart); (23.1458333333333 : 26 : JumpEnd); (23.7500005 : 26); (23.7500005 : 26.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_Editorial" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="0fd5777d-0d62-4e4e-88be-1de35ab5efac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.75 : 25.125); (12.75 : 24.9375); (12.9322926666667 : 24.9375 : JumpStart); (13.0989593333333 : 24.9375 : JumpEnd); (13.1979186666667 : 24.9375 : JumpStart); (13.3645853333333 : 24.9375 : JumpEnd); (13.4635451666667 : 24.9375 : JumpStart); (13.7630250833333 : 24.9375 : JumpEnd); (13.875 : 24.9375); (13.875 : 26.4431469726563); (14.1666666666667 : 26.4431469726563 : JumpStart); (14.5833333333333 : 26.4431469726563 : JumpEnd); (17.1041666666667 : 26.4431469726563 : JumpStart); (17.2708333333333 : 26.4431469726563 : JumpEnd); (18.4166666666667 : 26.4431469726563 : JumpStart); (18.5833333333333 : 26.4431469726563 : JumpEnd); (19.8541666666667 : 26.4431469726563 : JumpStart); (20.0208333333333 : 26.4431469726563 : JumpEnd); (20.0625 : 26.4431469726563); (20.0625 : 27.0353011067708); (22.5416666666667 : 27.0353011067708 : JumpStart); (23.0208333333333 : 27.0353011067708 : JumpEnd); (23.0625 : 27.0353011067708); (23.0625 : 25.625); (24.0104142916667 : 25.625 : JumpStart); (24.1770809583333 : 25.625 : JumpEnd); (24.4166664166667 : 25.625 : JumpStart); (24.5833330833333 : 25.625 : JumpEnd); (25.6666666666667 : 25.625 : JumpStart); (25.8333333333333 : 25.625 : JumpEnd); (25.9166666666667 : 25.625 : JumpStart); (26.0833333333333 : 25.625 : JumpEnd); (27.4010401666667 : 25.625 : JumpStart); (27.5677068333333 : 25.625 : JumpEnd); (28.625 : 25.625); (28.625 : 26.4431469726563); (29 : 26.4431469726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_EventInvitation" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="4aa329e4-9bc5-40cd-a117-d295698f57e7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.281252 : 25.125); (13.281252 : 23.125); (13.5963584166667 : 23.125 : JumpStart); (13.7630250833333 : 23.125 : JumpEnd); (16.5729166666667 : 23.125 : JumpStart); (16.7395833333333 : 23.125 : JumpEnd); (16.9166666666667 : 23.125 : JumpStart); (17.0833333333333 : 23.125 : JumpEnd); (17.1666666666667 : 23.125 : JumpStart); (17.3333333333333 : 23.125 : JumpEnd); (17.375 : 23.125); (17.375 : 23.5689925130208); (22.875 : 23.5689925130208); (22.875 : 24.4054991744792); (22.9166666666667 : 24.4054991744792 : JumpStart); (23.2083333333333 : 24.4054991744792 : JumpEnd); (23.25 : 24.4054991744792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_Event" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="faa6438b-a3b9-414a-9d64-156b77388678" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.2187475 : 25.125); (12.2187475 : 23.9375); (12.4010404166667 : 23.9375 : JumpStart); (12.5677070833333 : 23.9375 : JumpEnd); (13.1979186666667 : 23.9375 : JumpStart); (13.3645853333333 : 23.9375 : JumpEnd); (13.5963584166667 : 23.9375 : JumpStart); (13.7630250833333 : 23.9375 : JumpEnd); (14.5 : 23.9375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_Friend" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="b95ecba1-ca00-4610-805a-3fed324d7687" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.5468785 : 25.125); (13.5468785 : 24.2500025); (13.5963584166667 : 24.2500025 : JumpStart); (13.7630250833333 : 24.2500025 : JumpEnd); (14.5 : 24.2500025)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_Friend1" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="b95ecba1-ca00-4610-805a-3fed324d7687" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 28.8672351074219); (14.5 : 28.8672351074219)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_NewsFeed" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="7ec0ae14-106f-41c1-bca2-3a0bca3fdb25" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.9023076923077 : 30.7419254557292); (13.1709375858925 : 30.8314124193361 : JumpStart); (13.3290614141075 : 30.8840872019972 : JumpEnd); (14.125 : 31.1492331480369); (14.125 : 40.3565991210938); (14.5 : 40.3565991210938)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_Notification" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="916635bf-b995-4475-99cd-27a7d840ede0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 26.0569482421875); (13.7916666666667 : 26.0569482421875 : JumpStart); (13.9583333333333 : 26.0569482421875 : JumpEnd); (14.0416666666667 : 26.0569482421875 : JumpStart); (14.3333333333333 : 26.0569482421875 : JumpEnd); (20.25 : 26.0569482421875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_Post" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="e88ea64b-489d-4ed9-978a-2d3a662153a3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 27.1494502766927); (14.1666666666667 : 27.1494502766927 : JumpStart); (14.4583333333333 : 27.1494502766927 : JumpEnd); (17.1041666666667 : 27.1494502766927 : JumpStart); (17.2708333333333 : 27.1494502766927 : JumpEnd); (18.4166666666667 : 27.1494502766927 : JumpStart); (18.5833333333333 : 27.1494502766927 : JumpEnd); (19.6666666666667 : 27.1494502766927 : JumpStart); (20.0208333333333 : 27.1494502766927 : JumpEnd); (20.0416666666667 : 27.1494502766927 : JumpStart); (20.2083333333333 : 27.1494502766927 : JumpEnd); (22.40625 : 27.1494502766927); (22.40625 : 28.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_Problem" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="79a0e301-af22-47cf-849c-517a47565e47" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 30.3389404970954); (14.1666666666667 : 30.3389404970954 : JumpStart); (14.3333333333333 : 30.3389404970954 : JumpEnd); (16.5729161666667 : 30.3389404970954 : JumpStart); (16.7395828333333 : 30.3389404970954 : JumpEnd); (16.7916666666667 : 30.3389404970954 : JumpStart); (17.0833333333333 : 30.3389404970954 : JumpEnd); (17.1041666666667 : 30.3389404970954 : JumpStart); (17.4583333333333 : 30.3389404970954 : JumpEnd); (17.5 : 30.3389404970954)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_ProblemSubmission" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="1bc836f8-170c-4659-8243-c85b38679d64" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 29.3034434586589); (13.9166666666667 : 29.3034434586589 : JumpStart); (14.0833333333333 : 29.3034434586589 : JumpEnd); (14.375 : 29.3034434586589); (14.375 : 26.9375); (17.1041666666667 : 26.9375 : JumpStart); (17.2708333333333 : 26.9375 : JumpEnd); (18.4166666666667 : 26.9375 : JumpStart); (18.5833333333333 : 26.9375 : JumpEnd); (19.6666666666667 : 26.9375 : JumpStart); (20.1458333333333 : 26.9375 : JumpEnd); (20.1875 : 26.9375); (20.1875 : 24.125); (22.75 : 24.125); (22.75 : 25.5625); (24.0104142916667 : 25.5625 : JumpStart); (24.1770809583333 : 25.5625 : JumpEnd); (24.4166664166667 : 25.5625 : JumpStart); (24.5833330833333 : 25.5625 : JumpEnd); (25.6666666666667 : 25.5625 : JumpStart); (25.8333333333333 : 25.5625 : JumpEnd); (26.718748 : 25.5625); (26.718748 : 24.1362939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_ProblemTag" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="96af36ac-afdb-437d-b957-620a201296fe" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.015626 : 25.125); (13.015626 : 24.8125); (13.1979186666667 : 24.8125 : JumpStart); (13.3645853333333 : 24.8125 : JumpEnd); (13.4635451666667 : 24.8125 : JumpStart); (13.7630250833333 : 24.8125 : JumpEnd); (13.9166666666667 : 24.8125 : JumpStart); (14.2083333333333 : 24.8125 : JumpEnd); (14.3125 : 24.8125); (14.3125 : 26.8125); (17.1041666666667 : 26.8125 : JumpStart); (17.2708333333333 : 26.8125 : JumpEnd); (18.4166666666667 : 26.8125 : JumpStart); (18.5833333333333 : 26.8125 : JumpEnd); (19.875 : 26.8125); (19.875 : 27.4728011067708); (22.3229166666667 : 27.4728011067708 : JumpStart); (22.4895833333333 : 27.4728011067708 : JumpEnd); (22.6666666666667 : 27.4728011067708 : JumpStart); (22.8333333333333 : 27.4728011067708 : JumpEnd); (22.9375 : 27.4728011067708); (22.9375 : 26.4375); (22.9791666666667 : 26.4375 : JumpStart); (23.1458333333333 : 26.4375 : JumpEnd); (23.6666671666667 : 26.4375 : JumpStart); (23.8333338333333 : 26.4375 : JumpEnd); (25.625 : 26.4375); (25.625 : 27.065300641276); (25.6666666666667 : 27.065300641276 : JumpStart); (26.2083333333333 : 27.065300641276 : JumpEnd); (26.25 : 27.065300641276)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_Run" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="bec57808-de8f-4eac-8478-4230c32c157b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 30.6450013788061); (14.1875 : 31.0825013788061); (14.1875 : 37.0104484049479); (14.5 : 37.0104484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_Standing" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="97bd29ff-ee0d-4ae2-8060-a8fb1005f0cf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.2495212307692 : 30.7419254557292); (12.2495212307692 : 31.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_Team" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="a52ce8f9-127f-45d1-93bc-b9bdcef6d105" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.2812525 : 30.7419254557292); (12.2812525 : 31.375); (12.6666666666667 : 31.375 : JumpStart); (12.8333333333333 : 31.375 : JumpEnd); (14.0416666666667 : 31.375 : JumpStart); (14.2708333333333 : 31.375 : JumpEnd); (14.375 : 31.375); (14.375 : 35.8285953776042); (19.5729166666667 : 35.8285953776042 : JumpStart); (19.7395833333333 : 35.8285953776042 : JumpEnd); (20.125 : 35.8285953776042); (20.125 : 36.7400239726563); (20.5 : 36.7400239726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_TeamUser" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="81f79ece-0603-461f-a197-6e6b8e16e66c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.48437375 : 25.125); (12.48437375 : 22.5256977421875); (13.5963584166667 : 22.5256977421875 : JumpStart); (13.7630250833333 : 22.5256977421875 : JumpEnd); (16.5729166666667 : 22.5256977421875 : JumpStart); (16.7395833333333 : 22.5256977421875 : JumpEnd); (16.9166666666667 : 22.5256977421875 : JumpStart); (17.0833333333333 : 22.5256977421875 : JumpEnd); (17.1666666666667 : 22.5256977421875 : JumpStart); (17.3333333333333 : 22.5256977421875 : JumpEnd); (17.5 : 22.5256977421875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_Topic" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="aa211bd8-2e65-4b5f-958d-03d98ed5fa9a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.95312125 : 25.125); (11.95312125 : 23.2027498372396); (12.4010404166667 : 23.2027498372396 : JumpStart); (12.5677070833333 : 23.2027498372396 : JumpEnd); (13.5963584166667 : 23.2027498372396 : JumpStart); (13.7630250833333 : 23.2027498372396 : JumpEnd); (16.5729166666667 : 23.2027498372396 : JumpStart); (16.7395833333333 : 23.2027498372396 : JumpEnd); (16.9166666666667 : 23.2027498372396 : JumpStart); (17.0833333333333 : 23.2027498372396 : JumpEnd); (17.1666666666667 : 23.2027498372396 : JumpStart); (17.3333333333333 : 23.2027498372396 : JumpEnd); (19.5566091371194 : 23.2027498372396 : JumpStart); (19.8333333333333 : 23.2027498372396 : JumpEnd); (20.25 : 23.2027498372396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_TopicSubscription" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="759efe29-8ec5-4245-af14-8e559ac415bc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 27.287767101237); (14.1666666666667 : 27.287767101237 : JumpStart); (14.4583333333333 : 27.287767101237 : JumpEnd); (16.5729161666667 : 27.287767101237 : JumpStart); (16.7395828333333 : 27.287767101237 : JumpEnd); (17.1041666666667 : 27.287767101237 : JumpStart); (17.2708333333333 : 27.287767101237 : JumpEnd); (17.5 : 27.287767101237)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_UserRating" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="d3e6541e-2745-4a73-ab4b-1824a0b74b55" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 31.6557682307692); (11.1910744349011 : 31.4646937958681 : JumpStart); (11.3089255650989 : 31.3468426656703 : JumpEnd); (11.40625 : 31.2495182307692); (11.40625 : 27.1782995605469); (11.4791666666667 : 27.1782995605469 : JumpStart); (11.6458333333333 : 27.1782995605469 : JumpEnd); (11.75 : 27.1782995605469)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Affiliation/Affiliation_User" />
+      <nodes>
+        <classShapeMoniker Id="c04eaced-eb79-4a70-8af5-fb713fab4788" />
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 32.25); (5.875 : 31.875); (5.875 : 31.1794254557292); (8.66666666666667 : 31.1794254557292 : JumpStart); (8.83333333333333 : 31.1794254557292 : JumpEnd); (11.0416666666667 : 31.1794254557292 : JumpStart); (11.2083333333333 : 31.1794254557292 : JumpEnd); (11.3125 : 31.1794254557292); (11.3160744349011 : 31.175851020828 : JumpStart); (11.4651755650989 : 31.0267498906303 : JumpEnd); (11.5035744349011 : 30.988351020828 : JumpStart); (11.6214255650989 : 30.8704998906303 : JumpEnd); (11.75 : 30.7419254557292)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Country/Country_User" />
+      <nodes>
+        <classShapeMoniker Id="18f67d3f-cac8-4894-bfbc-95ebc80a21c4" />
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 28.5348986816406); (11.2916666666667 : 28.5348986816406 : JumpStart); (11.6458333333333 : 28.5348986816406 : JumpEnd); (11.75 : 28.5348986816406)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Language/Language_User" />
+      <nodes>
+        <classShapeMoniker Id="404ae4c5-ddb8-465c-91e5-adf07f51ae07" />
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 32.6121994863281); (2.91666666666667 : 32.6121994863281 : JumpStart); (3.08333333333333 : 32.6121994863281 : JumpEnd); (3.25 : 32.6121994863281); (3.25 : 31.40625); (3.29166666666667 : 31.40625 : JumpStart); (3.45833333333333 : 31.40625 : JumpEnd); (5.79166666666667 : 31.40625 : JumpStart); (5.95833333333333 : 31.40625 : JumpEnd); (7.16666666666667 : 31.40625 : JumpStart); (7.33333333333333 : 31.40625 : JumpEnd); (8.66666666666667 : 31.40625 : JumpStart); (8.83333333333333 : 31.40625 : JumpEnd); (11.1661848974359 : 31.40625 : JumpStart); (11.3333333333333 : 31.40625 : JumpEnd); (11.6875 : 31.40625); (11.6875 : 31.28125); (12.1661878974359 : 31.28125 : JumpStart); (12.3645858333333 : 31.28125 : JumpEnd); (12.6666666666667 : 31.28125 : JumpStart); (12.8333333333333 : 31.28125 : JumpEnd); (13.2499995 : 31.28125); (13.2499995 : 30.7419254557292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FudgeDataContext/Picture/Picture_User" />
+      <nodes>
+        <classShapeMoniker Id="b1d7f80a-3ed8-4314-88d4-34d2d03b554e" />
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="008d94b7-41bc-4e1f-b787-7274d6479325" absoluteBounds="24.75, 19.375, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/FudgeDataContext/CodeSnippet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="12f1379a-6f47-4601-bf01-9f556b95ab11" absoluteBounds="24.765, 19.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.7343735 : 27); (9.7343735 : 19.65625); (13.5963584166667 : 19.65625 : JumpStart); (13.7630250833333 : 19.65625 : JumpEnd); (24.75 : 19.65625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Language/Language_CodeSnippet" />
+      <nodes>
+        <classShapeMoniker Id="404ae4c5-ddb8-465c-91e5-adf07f51ae07" />
+        <classShapeMoniker Id="008d94b7-41bc-4e1f-b787-7274d6479325" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.2968775 : 26.625); (1.2968775 : 19.8281275); (24.75 : 19.8281275)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Rating/Rating_CodeSnippet" />
+      <nodes>
+        <classShapeMoniker Id="4f938505-2ceb-4b48-a2fb-448f3c07abe2" />
+        <classShapeMoniker Id="008d94b7-41bc-4e1f-b787-7274d6479325" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.5 : 21.03125025); (24.75 : 21.03125025)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/Topic/Topic_CodeSnippet" />
+      <nodes>
+        <classShapeMoniker Id="aa211bd8-2e65-4b5f-958d-03d98ed5fa9a" />
+        <classShapeMoniker Id="008d94b7-41bc-4e1f-b787-7274d6479325" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.67969175 : 25.125); (13.67969175 : 19.4843725); (24.75 : 19.4843725)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FudgeDataContext/User/User_CodeSnippet" />
+      <nodes>
+        <classShapeMoniker Id="5fc82e9d-c42d-41c0-88ba-c0c281db8883" />
+        <classShapeMoniker Id="008d94b7-41bc-4e1f-b787-7274d6479325" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.48437375 : 33.6362939453125); (1.48437375 : 35.8950512695313); (3.5 : 35.8950512695313)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FudgeDataContext/Picture/Picture_News" />
+      <nodes>
+        <classShapeMoniker Id="b1d7f80a-3ed8-4314-88d4-34d2d03b554e" />
+        <classShapeMoniker Id="c8d97965-65d8-4706-871b-0518e64eade4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 27.9494429077524); (2.97232693490112 : 28.1717698426535 : JumpStart); (3.09017806509888 : 28.2896209728513 : JumpEnd); (3.1875 : 28.3869429077524); (3.1875 : 35.2287736347656); (3.5 : 35.2287736347656)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FudgeDataContext/Rating/Rating_News" />
+      <nodes>
+        <classShapeMoniker Id="4f938505-2ceb-4b48-a2fb-448f3c07abe2" />
+        <classShapeMoniker Id="c8d97965-65d8-4706-871b-0518e64eade4" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

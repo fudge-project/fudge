@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<language name="Python 2.5">
+    <run type="interpreted" extra-time="100" extra-memory="4194304">
+        <path>C:\Program Files\Fudge Framework\Python25\python.exe</path>
+        <arguments>"%FILENAME%"</arguments>
+    </run>
+</language>

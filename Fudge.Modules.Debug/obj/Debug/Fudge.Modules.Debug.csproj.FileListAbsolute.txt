@@ -1,0 +1,11 @@
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Debug\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Debug\bin\Debug\Fudge.Modules.Debug.dll
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Debug\bin\Debug\Fudge.Modules.Debug.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Debug\bin\Debug\Fudge.Framework.ModuleInterface.dll
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Debug\bin\Debug\fudgefx.exe
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Debug\bin\Debug\Fudge.Framework.Database.dll
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Debug\bin\Debug\Fudge.Framework.ModuleInterface.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Debug\bin\Debug\fudgefx.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Debug\bin\Debug\Fudge.Framework.Database.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Debug\obj\Debug\Fudge.Modules.Debug.dll
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Debug\obj\Debug\Fudge.Modules.Debug.pdb

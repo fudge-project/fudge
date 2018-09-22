@@ -1,0 +1,9 @@
+Imports System
+
+Public Class Foo
+    Public Shared Sub Main(ByVal args As String())
+        Dim s As String() = Console.ReadLine().Split(" "c)
+        Console.WriteLine(Integer.Parse(s(0)) + Integer.Parse(s(1)))
+
+    End Sub
+End Class

@@ -1,0 +1,131 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Default.master.cs" Inherits="_default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">    
+    <title>(*Fudge).The Social Programming Network</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Fudge is the first social programming network." />    
+    <link href="/site/style/default.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/site/style/fudgecontrols.css" rel="stylesheet" type="text/css" media="screen" />    
+    <script type="text/javascript">                
+        function handleLoad() {                        
+            var pages = ['problems_menu_item', 
+                         'contests_menu_item',
+                         'teams_menu_item', 
+                         'community_menu_item',
+                         'reg_menu_item',
+                         'news_menu_item', 
+                         'help_menu_item'];
+                         
+            if(current >= pages.length) {
+                return;
+            }                         
+                         
+            for(var i = 0; i < pages.length; ++i) {                
+                document.getElementById(pages[i]).className = '';
+            }
+            
+            document.getElementById(pages[current]).className = 'current_page_item';
+        }              
+    </script>
+
+</head>
+<body id="body" runat="server">
+
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>        
+    <!-- start header -->
+    <div id="header">
+        <div id="logo">
+            <a href="/Default.aspx"><img src="/site/images/fudge_banner.gif" /></a>
+        </div>
+        <div class="login" style="position: relative">
+            <table style="position: absolute; top: 50px; border-style: none">
+                <tr>
+                    <td style="border-style: none">
+                        <asp:Label ID="loginName" runat="server" Text="| "></asp:Label>
+                    </td>
+                    <td style="border-style: none; text-align: left;">
+                        <asp:LinkButton ID="logout" CausesValidation="false" runat="server" Visible="false"
+                            OnClick="OnLogoutClick">Logout</asp:LinkButton>
+                    </td>
+                </tr>
+            </table>
+            <asp:Panel ID="loginPanel" runat="server">
+                <table style="border-collapse: collapse; margin-left: 40%">
+                    <tr>
+                        <td>
+                            <asp:TextBox ID="email" CssClass="logininput" runat="server"></asp:TextBox>
+                            <ajaxToolkit:TextBoxWatermarkExtender TargetControlID="email" WatermarkCssClass="watermarkcss"
+                                WatermarkText="Email" ID="TextBoxWatermarkExtender2" runat="server">
+                            </ajaxToolkit:TextBoxWatermarkExtender>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:TextBox ID="password" CssClass="logininput" TextMode="Password" runat="server"></asp:TextBox>
+                            <ajaxToolkit:TextBoxWatermarkExtender TargetControlID="password" WatermarkCssClass="watermarkcss"
+                                WatermarkText="password" ID="TextBoxWatermarkExtender1" runat="server">
+                            </ajaxToolkit:TextBoxWatermarkExtender>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:CheckBox ID="rememberMe" runat="server" />
+                            Remember me
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Button ID="loginButton" CausesValidation="false" runat="server" Text="Login"
+                                CssClass="loginbutton" OnClick="OnLoginButtonClick" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <small>
+                                <asp:LinkButton CssClass="nounderline" CausesValidation="false" PostBackUrl="~/Users/Forgot"
+                                    runat="server" Text="Forgot Password?" ID="forgotPassword" />
+                            </small>
+                        </td>
+                    </tr>
+                </table>
+            </asp:Panel>
+        </div>
+    </div>
+    <!-- end header -->
+    <!-- star menu -->
+    <div id="menu" style="margin-top: 30px;">
+        <ul>
+            <li id="problems_menu_item"><a href="/Problems">Problems</a></li>          
+            <li id="contests_menu_item"><a href="/Contests">Contests</a></li>  
+            <li id="teams_menu_item"><a href="/Teams">Teams</a></li>           
+            <li id="community_menu_item"><a href="/Community">Community</a></li>            
+            <li id="reg_menu_item"><a runat="server" id="reglink" href="/Users/Register">Registration</a></li>
+            <li id="news_menu_item"><a href="/News">News</a></li>
+            <li id="help_menu_item"><a href="/Help">Help</a></li>
+        </ul>
+    </div>
+    <!-- end menu -->
+    <!-- start page -->
+    <div id="page">
+        <div class="error" id="message" visible="false" runat="server">
+        </div>        
+        <asp:Panel runat="server" ID="contentPanel">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </asp:Panel>
+    </div>
+    <!-- end page -->
+    <!-- start footer -->
+    <div id="footer">
+        &copy;2008 Fudge. All Rights Reserved.
+    </div>
+    <!-- end footer -->
+    </form>
+</body>
+</html>

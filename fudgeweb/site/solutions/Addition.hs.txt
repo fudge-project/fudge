@@ -1,0 +1,4 @@
+import IO
+
+main = do x <- hGetLine stdin
+          putStr $ show (sum (map (\x->read x::Int) (words x)))

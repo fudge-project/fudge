@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<language name="Haskell">
+    <compile errors-on-std-out="false">
+        <path>C:\Program Files\Fudge Framework\ghc-6.8.1\bin\ghc</path>
+        <arguments>-O2 -v0 -fforce-recomp -o Main.exe "%SIMPLENAME%"</arguments>
+        <working-directory>%DIRECTORYNAME%</working-directory>
+    </compile>
+    <run type="native">
+        <path>%EXENAME%</path>
+    </run>
+</language>

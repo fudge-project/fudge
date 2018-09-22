@@ -1,0 +1,24 @@
+﻿.problemView table
+{
+	border: 1px solid #CCC;
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 10px;
+}
+.problemView table tr th
+{
+	background-color: #F5F5F5;
+	border-bottom: 1px solid #CCCCCC;
+	padding: 3px;
+}
+.problemView table tr td
+{
+	height: 35px;
+	border-top: 1px solid #F5F5F5;
+	padding-right: 5px;
+	text-align: center;
+}
+.problemView table tr td img
+{
+	vertical-align: middle;
+}

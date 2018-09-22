@@ -1,0 +1,11 @@
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskRunner\bin\Debug\Fudge.Modules.TaskManager.dll
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskRunner\bin\Debug\Fudge.Modules.TaskManager.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskRunner\bin\Debug\Fudge.Framework.ModuleInterface.dll
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskRunner\bin\Debug\fudgefx.exe
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskRunner\bin\Debug\Fudge.Framework.Database.dll
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskRunner\bin\Debug\Fudge.Framework.ModuleInterface.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskRunner\bin\Debug\fudgefx.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskRunner\bin\Debug\Fudge.Framework.Database.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskRunner\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskRunner\obj\Debug\Fudge.Modules.TaskManager.dll
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskRunner\obj\Debug\Fudge.Modules.TaskManager.pdb

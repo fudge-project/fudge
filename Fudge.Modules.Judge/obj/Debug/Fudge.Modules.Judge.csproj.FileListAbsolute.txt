@@ -1,0 +1,11 @@
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Judge\bin\Debug\Fudge.Modules.Judge.dll
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Judge\bin\Debug\Fudge.Modules.Judge.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Judge\bin\Debug\Fudge.Framework.Database.dll
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Judge\bin\Debug\Fudge.Framework.ModuleInterface.dll
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Judge\bin\Debug\Fudge.Framework.Network.dll
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Judge\bin\Debug\Fudge.Framework.ModuleInterface.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Judge\bin\Debug\Fudge.Framework.Network.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Judge\bin\Debug\Fudge.Framework.Database.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Judge\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Judge\obj\Debug\Fudge.Modules.Judge.dll
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.Judge\obj\Debug\Fudge.Modules.Judge.pdb

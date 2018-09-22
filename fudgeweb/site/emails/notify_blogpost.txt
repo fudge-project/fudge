@@ -1,0 +1,9 @@
+﻿{0} commented on your blog post {1}
+
+"{2}"
+
+To see it, follow the link below:
+http://fudge.fit.edu/Community/Blogs/{3}/{4}
+
+Thanks,
+The Fudge Team

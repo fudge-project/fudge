@@ -1,0 +1,15 @@
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework\bin\Debug\fudgefx.exe.config
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework\bin\Debug\fudgefx.exe.manifest
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework\bin\Debug\fudgefx.application
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework\bin\Debug\fudgefx.exe
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework\bin\Debug\fudgefx.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework\bin\Debug\Fudge.Framework.Database.dll
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework\bin\Debug\Fudge.Framework.ModuleInterface.dll
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework\bin\Debug\Fudge.Framework.ModuleInterface.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework\bin\Debug\Fudge.Framework.Database.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework\obj\Debug\fudgefx.TrustInfo.xml
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework\obj\Debug\fudgefx.exe.manifest
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework\obj\Debug\fudgefx.application
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework\obj\Debug\fudgefx.exe
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework\obj\Debug\fudgefx.pdb

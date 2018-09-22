@@ -1,0 +1,24 @@
+﻿.tags span
+{
+	padding: 3px;
+	margin-right: 7px;
+	border: 1px solid #CCC;
+}
+.tags span a
+{
+	text-decoration: none;
+}
+.problem_footer
+{
+	border-top: 1px solid #CCC;
+	display: block;
+}
+.problem_footer a
+{
+	text-decoration: none;
+	margin-right: 15px;
+}
+.problem_footer img
+{
+	margin-top: 2px;
+}

@@ -1,0 +1,11 @@
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework.Setup\bin\Debug\Fudge.Framework.Setup.exe
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework.Setup\bin\Debug\Fudge.Framework.Setup.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework.Setup\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework.Setup\obj\Debug\Fudge.Framework.Setup.MainForm.resources
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework.Setup\obj\Debug\Fudge.Framework.Setup.Properties.Resources.resources
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework.Setup\obj\Debug\Fudge.Framework.Setup.Sheets.DirectorySheet.resources
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework.Setup\obj\Debug\Fudge.Framework.Setup.csproj.GenerateResource.Cache
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework.Setup\obj\Debug\Fudge.Framework.Setup.exe
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework.Setup\obj\Debug\Fudge.Framework.Setup.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework.Setup\obj\Debug\Fudge.Framework.Setup.Sheets.UsersSheet.resources
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Framework.Setup\obj\Debug\Fudge.Framework.Setup.Sheets.CompilersSheet.resources

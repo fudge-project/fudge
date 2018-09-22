@@ -1,0 +1,7 @@
+﻿{0} posted on {1}
+
+To see the reply, follow the link below:
+http://fudge.fit.edu/Community/Forum/Posts/{2}
+
+Thanks,
+The Fudge Team

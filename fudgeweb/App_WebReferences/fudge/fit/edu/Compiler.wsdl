@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://fudge.fit.edu/Services/Compiler.asmx" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://fudge.fit.edu/Services/Compiler.asmx" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://fudge.fit.edu/Services/Compiler.asmx">
+      <s:element name="Analyze">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="rule" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AnalyzeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AnalyzeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Compile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CompileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CompileResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AnalyzeSoapIn">
+    <wsdl:part name="parameters" element="tns:Analyze" />
+  </wsdl:message>
+  <wsdl:message name="AnalyzeSoapOut">
+    <wsdl:part name="parameters" element="tns:AnalyzeResponse" />
+  </wsdl:message>
+  <wsdl:message name="CompileSoapIn">
+    <wsdl:part name="parameters" element="tns:Compile" />
+  </wsdl:message>
+  <wsdl:message name="CompileSoapOut">
+    <wsdl:part name="parameters" element="tns:CompileResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CompilerSoap">
+    <wsdl:operation name="Analyze">
+      <wsdl:input message="tns:AnalyzeSoapIn" />
+      <wsdl:output message="tns:AnalyzeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Compile">
+      <wsdl:input message="tns:CompileSoapIn" />
+      <wsdl:output message="tns:CompileSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CompilerSoap" type="tns:CompilerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Analyze">
+      <soap:operation soapAction="http://fudge.fit.edu/Services/Compiler.asmx/Analyze" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Compile">
+      <soap:operation soapAction="http://fudge.fit.edu/Services/Compiler.asmx/Compile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CompilerSoap12" type="tns:CompilerSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Analyze">
+      <soap12:operation soapAction="http://fudge.fit.edu/Services/Compiler.asmx/Analyze" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Compile">
+      <soap12:operation soapAction="http://fudge.fit.edu/Services/Compiler.asmx/Compile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Compiler">
+    <wsdl:port name="CompilerSoap" binding="tns:CompilerSoap">
+      <soap:address location="http://fudge.fit.edu/Services/Compiler.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CompilerSoap12" binding="tns:CompilerSoap12">
+      <soap12:address location="http://fudge.fit.edu/Services/Compiler.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

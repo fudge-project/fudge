@@ -1,0 +1,9 @@
+import java.util.*;
+
+public class Main {
+ public static void main(String[] args) {
+  final Scanner in = new Scanner(System.in);
+  System.out.println(in.nextInt() + in.nextInt());
+
+ }
+}

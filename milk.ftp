@@ -1,0 +1,20 @@
+open 163.118.135.107
+anonymous
+epanero@fit.edu
+mkdir Modules
+put Fudge.Framework\bin\Debug\fudgefx.exe fudgefx.exe
+put Fudge.Framework.Database\bin\Debug\Fudge.Framework.Database.dll Fudge.Framework.Database.dll
+put Fudge.Framework.ModuleInterface\bin\Debug\Fudge.Framework.ModuleInterface.dll Fudge.Framework.ModuleInterface.dll
+put Fudge.Framework.Network\bin\Debug\Fudge.Framework.Network.dll Fudge.Framework.Network.dll
+put Fudge.Modules.Compile\bin\Debug\Fudge.Modules.Compile.dll Modules\Fudge.Modules.Compile.dll
+put Fudge.Modules.Execute\bin\Debug\Fudge.Modules.Execute.dll Modules\Fudge.Modules.Execute.dll
+put Fudge.Modules.Judge\bin\Debug\Fudge.Modules.Judge.dll Modules\Fudge.Modules.Judge.dll
+put Fudge.Modules.Standings\bin\Debug\Fudge.Modules.Standings.dll Modules\Fudge.Modules.Standings.dll
+put Fudge.Modules.Contests\bin\Debug\Fudge.Modules.Contests.dll Modules\Fudge.Modules.Contests.dll
+put Fudge.Modules.Debug\bin\Debug\Fudge.Modules.Debug.dll Modules\Fudge.Modules.Debug.dll
+put Fudge.Framework.Helper\bin\Debug\Fudge.Framework.Helper.exe Fudge.Framework.Helper.exe
+put Fudge.Tasks.AdminTasks\bin\Debug\Fudge.Tasks.AdminTasks.dll Fudge.Tasks.AdminTasks.dll
+put Fudge.Tasks.NewsFeedTask\bin\Debug\Fudge.Tasks.NewsFeedTask.dll Fudge.Tasks.NewsFeedTask.dll
+put Fudge.Modules.TaskRunner\bin\Debug\Fudge.Modules.TaskManager.dll Fudge.Modules.TaskManager.dll
+put Fudge.Modules.Helloworld\bin\Debug\Fudge.Modules.Helloworld.dll Fudge.Modules.Helloworld.dll
+bye

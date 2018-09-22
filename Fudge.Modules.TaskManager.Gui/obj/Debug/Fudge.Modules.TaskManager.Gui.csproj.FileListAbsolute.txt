@@ -1,0 +1,16 @@
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskManager.Gui\bin\Debug\Fudge.Modules.TaskManager.Gui.exe
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskManager.Gui\bin\Debug\Fudge.Modules.TaskManager.Gui.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskManager.Gui\bin\Debug\Fudge.Framework.ModuleInterface.dll
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskManager.Gui\bin\Debug\Fudge.Modules.TaskManager.dll
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskManager.Gui\bin\Debug\Fudge.Framework.Database.dll
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskManager.Gui\bin\Debug\fudgefx.exe
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskManager.Gui\bin\Debug\Fudge.Framework.ModuleInterface.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskManager.Gui\bin\Debug\Fudge.Framework.Database.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskManager.Gui\bin\Debug\fudgefx.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskManager.Gui\bin\Debug\Fudge.Modules.TaskManager.pdb
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskManager.Gui\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskManager.Gui\obj\Debug\Fudge.Modules.TaskManager.Gui.TaskManagerForm.resources
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskManager.Gui\obj\Debug\Fudge.Modules.TaskManager.Gui.Properties.Resources.resources
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskManager.Gui\obj\Debug\Fudge.Modules.TaskManager.Gui.csproj.GenerateResource.Cache
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskManager.Gui\obj\Debug\Fudge.Modules.TaskManager.Gui.exe
+C:\Users\eugi\Documents\Visual Studio 2008\Projects\fudgets\b-epanero\Fudge.Modules.TaskManager.Gui\obj\Debug\Fudge.Modules.TaskManager.Gui.pdb

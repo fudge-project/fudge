@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://fudge.fit.edu/Services/Compiler.asmx?wsdl" docRef="http://fudge.fit.edu/Services/Compiler.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://fudge.fit.edu/Services/Compiler.asmx" xmlns:q1="http://fudge.fit.edu/Services/Compiler.asmx" binding="q1:CompilerSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://fudge.fit.edu/Services/Compiler.asmx" xmlns:q2="http://fudge.fit.edu/Services/Compiler.asmx" binding="q2:CompilerSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

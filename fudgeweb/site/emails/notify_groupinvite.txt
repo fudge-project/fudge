@@ -1,0 +1,6 @@
+﻿{0} has invited you to join {1}
+
+To see it, click here http://fudge.fit.edu/Teams/{2}
+
+Thanks,
+The Fudge Team

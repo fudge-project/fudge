@@ -1,0 +1,631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="fudge" EntityNamespace="Fudge.Framework.Database" Class="FudgeDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=163.118.202.41,81;Initial Catalog=fudge;Persist Security Info=True;User ID=webuser" SettingsObjectName="Fudge.Framework.Database.Properties.Settings" SettingsPropertyName="fudgeConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Affiliations" Member="Affiliations">
+    <Type Name="Affiliation">
+      <Column Name="AffiliationId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EntityId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(320) NOT NULL" CanBeNull="false" />
+      <Column Name="ActivationCode" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="JoinTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LeaveTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Type" Type="AffiliationType" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="AffiliationStatus" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="Affiliation_Contest" Member="Contests" OtherKey="EntityId" Type="Contest" />
+      <Association Name="Affiliation_Team" Member="Teams" OtherKey="AffiliationId" Type="Team" />
+      <Association Name="Affiliation_User" Member="Users" OtherKey="AffiliationId" Type="User" />
+      <Association Name="Entity_Affiliation" Member="Entity" ThisKey="EntityId" Type="Entity" IsForeignKey="true" />
+      <Association Name="User_Affiliation" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ArticleChanges" Member="ArticleChanges">
+    <Type Name="ArticleChange">
+      <Column Name="ArticleChangeId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ArticleId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.Xml.Linq.XElement" DbType="Xml NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Association Name="Article_ArticleChange" Member="Article" ThisKey="ArticleId" Type="Article" IsForeignKey="true" />
+      <Association Name="User_ArticleChange" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Articles" Member="Articles">
+    <Type Name="Article">
+      <Column Name="ArticleId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.Xml.Linq.XElement" DbType="Xml" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="RatingId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Article_ArticleChange" Member="ArticleChanges" OtherKey="ArticleId" Type="ArticleChange" />
+      <Association Name="Article_Keyword" Member="Keywords" OtherKey="ArticleId" Type="Keyword" />
+      <Association Name="Rating_Article" Member="Rating" ThisKey="RatingId" Type="Rating" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Blogs" Member="Blogs">
+    <Type Name="Blog">
+      <Column Name="BlogId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UrlName" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ForumId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RatingId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PictureId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="Blog_BlogTag" Member="BlogTags" OtherKey="BlogId" Type="BlogTag" />
+      <Association Name="Forum_Blog" Member="Forum" ThisKey="ForumId" Type="Forum" IsForeignKey="true" />
+      <Association Name="Picture_Blog" Member="Picture" ThisKey="PictureId" Type="Picture" IsForeignKey="true" />
+      <Association Name="Rating_Blog" Member="Rating" ThisKey="RatingId" Type="Rating" IsForeignKey="true" />
+      <Association Name="User_Blog" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BlogTags" Member="BlogTags">
+    <Type Name="BlogTag">
+      <Column Name="BlogId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TagId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Blog_BlogTag" Member="Blog" ThisKey="BlogId" Type="Blog" IsForeignKey="true" />
+      <Association Name="Tag_BlogTag" Member="Tag" ThisKey="TagId" Type="Tag" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Clarifications" Member="Clarifications">
+    <Type Name="Clarification">
+      <Column Name="ClarificationId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ContestId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="Contest_Clarification" Member="Contest" ThisKey="ContestId" Type="Contest" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContestProblems" Member="ContestProblems">
+    <Type Name="ContestProblem">
+      <Column Name="ContestId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProblemId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Contest_ContestProblem" Member="Contest" ThisKey="ContestId" Type="Contest" IsForeignKey="true" />
+      <Association Name="Problem_ContestProblem" Member="Problem" ThisKey="ProblemId" Type="Problem" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Contests" Member="Contests">
+    <Type Name="Contest">
+      <Column Name="ContestId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EntityId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ForumId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="UrlName" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="StartTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EndTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Scoring" Type="ContestScoring" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="ContestStatus" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Scope" Type="ContestScope" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="TeamSize" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Contest_Clarification" Member="Clarifications" OtherKey="ContestId" Type="Clarification" />
+      <Association Name="Contest_ContestProblem" Member="ContestProblems" OtherKey="ContestId" Type="ContestProblem" />
+      <Association Name="Contest_ContestUser" Member="ContestUsers" OtherKey="ContestId" Type="ContestUser" />
+      <Association Name="Contest_Editorial" Member="Editorials" OtherKey="ContestId" Type="Editorial" />
+      <Association Name="Contest_Run" Member="Runs" OtherKey="ContestId" Type="Run" />
+      <Association Name="Affiliation_Contest" Member="Affiliation" ThisKey="EntityId" Type="Affiliation" IsForeignKey="true" />
+      <Association Name="Entity_Contest" Member="Entity" ThisKey="EntityId" Type="Entity" IsForeignKey="true" />
+      <Association Name="Forum_Contest" Member="Forum" ThisKey="ForumId" Type="Forum" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContestUsers" Member="ContestUsers">
+    <Type Name="ContestUser">
+      <Column Name="ContestId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TeamId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Rank" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Points" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Contest_ContestUser" Member="Contest" ThisKey="ContestId" Type="Contest" IsForeignKey="true" />
+      <Association Name="Team_ContestUser" Member="Team" ThisKey="TeamId" Type="Team" IsForeignKey="true" />
+      <Association Name="User_ContestUser" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Countries" Member="Countries">
+    <Type Name="Country">
+      <Column Name="CountryId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="PictureId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Country_Entity" Member="Entities" OtherKey="CountryId" Type="Entity" />
+      <Association Name="Country_User" Member="Users" OtherKey="CountryId" Type="User" />
+      <Association Name="Picture_Country" Member="Picture" ThisKey="PictureId" Type="Picture" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Editorials" Member="Editorials">
+    <Type Name="Editorial">
+      <Column Name="EditorialId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ContestId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TopicId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RatingId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="Contest_Editorial" Member="Contest" ThisKey="ContestId" Type="Contest" IsForeignKey="true" />
+      <Association Name="Rating_Editorial" Member="Rating" ThisKey="RatingId" Type="Rating" IsForeignKey="true" />
+      <Association Name="Topic_Editorial" Member="Topic" ThisKey="TopicId" Type="Topic" IsForeignKey="true" />
+      <Association Name="User_Editorial" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Entities" Member="Entities">
+    <Type Name="Entity">
+      <Column Name="EntityId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CountryId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TopicId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PictureId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Domain" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="GlobalRank" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="EntityType" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Points" Type="System.Int32" DbType="INT NOT NULL" CanBeNull="false" />
+      <Association Name="Entity_Affiliation" Member="Affiliations" OtherKey="EntityId" Type="Affiliation" />
+      <Association Name="Entity_Contest" Member="Contests" OtherKey="EntityId" Type="Contest" />
+      <Association Name="Entity_Event" Member="Events" OtherKey="EntityId" Type="Event" />
+      <Association Name="Country_Entity" Member="Country" ThisKey="CountryId" Type="Country" IsForeignKey="true" />
+      <Association Name="Picture_Entity" Member="Picture" ThisKey="PictureId" Type="Picture" IsForeignKey="true" />
+      <Association Name="Topic_Entity" Member="Topic" ThisKey="TopicId" Type="Topic" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EventInvitations" Member="EventInvitations">
+    <Type Name="EventInvitation">
+      <Column Name="EventId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Status" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="Event_EventInvitation" Member="Event" ThisKey="EventId" Type="Event" IsForeignKey="true" />
+      <Association Name="User_EventInvitation" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Events" Member="Events">
+    <Type Name="Event">
+      <Column Name="EventId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TeamId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EntityId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TopicId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="StartTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EndTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Host" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Location" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Description" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="PictureId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Event_EventInvitation" Member="EventInvitations" OtherKey="EventId" Type="EventInvitation" />
+      <Association Name="Entity_Event" Member="Entity" ThisKey="EntityId" Type="Entity" IsForeignKey="true" />
+      <Association Name="Picture_Event" Member="Picture" ThisKey="PictureId" Type="Picture" IsForeignKey="true" />
+      <Association Name="Team_Event" Member="Team" ThisKey="TeamId" Type="Team" IsForeignKey="true" />
+      <Association Name="Topic_Event" Member="Topic" ThisKey="TopicId" Type="Topic" IsForeignKey="true" />
+      <Association Name="User_Event" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ForumCategories" Member="ForumCategories">
+    <Type Name="ForumCategory">
+      <Column Name="CategoryId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="Visible" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="ForumCategory_Forum" Member="Forums" OtherKey="CategoryId" Type="Forum" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Forums" Member="Forums">
+    <Type Name="Forum">
+      <Column Name="ForumId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Visible" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Forum_Blog" Member="Blogs" OtherKey="ForumId" Type="Blog" />
+      <Association Name="Forum_Contest" Member="Contests" OtherKey="ForumId" Type="Contest" />
+      <Association Name="Forum_Problem" Member="Problems" OtherKey="ForumId" Type="Problem" />
+      <Association Name="Forum_Topic" Member="Topics" OtherKey="ForumId" Type="Topic" />
+      <Association Name="ForumCategory_Forum" Member="ForumCategory" ThisKey="CategoryId" Type="ForumCategory" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Friends" Member="Friends">
+    <Type Name="Friend">
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FriendId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Status" Type="FriendStatus" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="User_Friend" Member="User" ThisKey="FriendId" Type="User" IsForeignKey="true" />
+      <Association Name="User_Friend1" Member="User1" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Keywords" Member="Keywords">
+    <Type Name="Keyword">
+      <Column Name="ProblemId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ArticleId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Article_Keyword" Member="Article" ThisKey="ArticleId" Type="Article" IsForeignKey="true" />
+      <Association Name="Problem_Keyword" Member="Problem" ThisKey="ProblemId" Type="Problem" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Languages" Member="Languages">
+    <Type Name="Language">
+      <Column Name="LanguageId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="XmlFile" Type="System.String" DbType="VarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="DefaultFile" Type="System.String" DbType="VarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="SourceId" Type="System.String" DbType="VarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="Visible" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Language_Problem" Member="Problems" OtherKey="SolutionLanguageId" Type="Problem" />
+      <Association Name="Language_Problem1" Member="Problems1" OtherKey="SpecialJudgeLanguageId" Type="Problem" />
+      <Association Name="Language_ProblemSubmission" Member="ProblemSubmissions" OtherKey="LanguageId" Type="ProblemSubmission" />
+      <Association Name="Language_Run" Member="Runs" OtherKey="LanguageId" Type="Run" />
+      <Association Name="Language_User" Member="Users" OtherKey="LanguageId" Type="User" />
+      <Association Name="Language_CodeSnippet" Member="CodeSnippets" OtherKey="LanguageId" Type="CodeSnippet" />
+    </Type>
+  </Table>
+  <Table Name="dbo.News" Member="News">
+    <Type Name="News">
+      <Column Name="NewsId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="UrlName" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="NewsLink" Type="System.String" DbType="VarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="RatingId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="PictureId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Picture_News" Member="Picture" ThisKey="PictureId" Type="Picture" IsForeignKey="true" />
+      <Association Name="Rating_News" Member="Rating" ThisKey="RatingId" Type="Rating" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NewsFeed" Member="NewsFeeds">
+    <Type Name="NewsFeed">
+      <Column Name="NewsFeedId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Type" Type="NewsFeedType" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Parameters" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="User_NewsFeed" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Newsletters" Member="Newsletters">
+    <Type Name="Newsletter">
+      <Column Name="NewsletterId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Html" Type="System.Xml.Linq.XElement" DbType="Xml NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Plain" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Notifications" Member="Notifications">
+    <Type Name="Notification">
+      <Column Name="NotificationId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Link" Type="System.String" DbType="VarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="NotificationType" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="User_Notification" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Pictures" Member="Pictures">
+    <Type Name="Picture">
+      <Column Name="PictureId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Data" Type="System.Data.Linq.Binary" DbType="Image NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="Picture_Blog" Member="Blogs" OtherKey="PictureId" Type="Blog" />
+      <Association Name="Picture_Country" Member="Countries" OtherKey="PictureId" Type="Country" />
+      <Association Name="Picture_Entity" Member="Entities" OtherKey="PictureId" Type="Entity" />
+      <Association Name="Picture_Event" Member="Events" OtherKey="PictureId" Type="Event" />
+      <Association Name="Picture_News" Member="News" OtherKey="PictureId" Type="News" />
+      <Association Name="Picture_Team" Member="Teams" OtherKey="PictureId" Type="Team" />
+      <Association Name="Picture_User" Member="Users" OtherKey="PictureId" Type="User" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Posts" Member="Posts">
+    <Type Name="Post">
+      <Column Name="PostId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TopicId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RatingId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Visible" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Message" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="Rating_Post" Member="Rating" ThisKey="RatingId" Type="Rating" IsForeignKey="true" />
+      <Association Name="Topic_Post" Member="Topic" ThisKey="TopicId" Type="Topic" IsForeignKey="true" />
+      <Association Name="User_Post" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Problems" Member="Problems">
+    <Type Name="Problem">
+      <Column Name="ProblemId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SourceId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ForumId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RatingId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="ProblemType" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="UrlName" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Statement" Type="System.Xml.Linq.XElement" DbType="Xml NOT NULL" CanBeNull="false" UpdateCheck="Never" IsDelayLoaded="true" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Visible" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Solution" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="SolutionLanguageId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SpecialJudge" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="SpecialJudgeLanguageId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Problem_ContestProblem" Member="ContestProblems" OtherKey="ProblemId" Type="ContestProblem" />
+      <Association Name="Problem_Keyword" Member="Keywords" OtherKey="ProblemId" Type="Keyword" />
+      <Association Name="Problem_ProblemTag" Member="ProblemTags" OtherKey="ProblemId" Type="ProblemTag" />
+      <Association Name="Problem_Run" Member="Runs" OtherKey="ProblemId" Type="Run" />
+      <Association Name="Problem_TestCase" Member="TestCases" OtherKey="ProblemId" Type="TestCase" />
+      <Association Name="Forum_Problem" Member="Forum" ThisKey="ForumId" Type="Forum" IsForeignKey="true" />
+      <Association Name="Language_Problem" Member="Language" ThisKey="SolutionLanguageId" Type="Language" IsForeignKey="true" />
+      <Association Name="Language_Problem1" Member="Language1" ThisKey="SpecialJudgeLanguageId" Type="Language" IsForeignKey="true" />
+      <Association Name="Rating_Problem" Member="Rating" ThisKey="RatingId" Type="Rating" IsForeignKey="true" />
+      <Association Name="Source_Problem" Member="Source" ThisKey="SourceId" Type="Source" IsForeignKey="true" />
+      <Association Name="User_Problem" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProblemSubmissions" Member="ProblemSubmissions">
+    <Type Name="ProblemSubmission">
+      <Column Name="ProblemSubmissionId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LanguageId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Solution" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Submission" Type="System.Xml.Linq.XElement" DbType="Xml NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Language_ProblemSubmission" Member="Language" ThisKey="LanguageId" Type="Language" IsForeignKey="true" />
+      <Association Name="User_ProblemSubmission" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProblemTags" Member="ProblemTags">
+    <Type Name="ProblemTag">
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProblemId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TagId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Problem_ProblemTag" Member="Problem" ThisKey="ProblemId" Type="Problem" IsForeignKey="true" />
+      <Association Name="Tag_ProblemTag" Member="Tag" ThisKey="TagId" Type="Tag" IsForeignKey="true" />
+      <Association Name="User_ProblemTag" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Ratings" Member="Ratings">
+    <Type Name="Rating">
+      <Column Name="RatingId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Sum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Rating_Article" Member="Articles" OtherKey="RatingId" Type="Article" />
+      <Association Name="Rating_Blog" Member="Blogs" OtherKey="RatingId" Type="Blog" />
+      <Association Name="Rating_Editorial" Member="Editorials" OtherKey="RatingId" Type="Editorial" />
+      <Association Name="Rating_News" Member="News" OtherKey="RatingId" Type="News" />
+      <Association Name="Rating_Post" Member="Posts" OtherKey="RatingId" Type="Post" />
+      <Association Name="Rating_Problem" Member="Problems" OtherKey="RatingId" Type="Problem" />
+      <Association Name="Rating_Run" Member="Runs" OtherKey="RatingId" Type="Run" />
+      <Association Name="Rating_UserRating" Member="UserRatings" OtherKey="RatingId" Type="UserRating" />
+      <Association Name="Rating_CodeSnippet" Member="CodeSnippets" OtherKey="RatingId" Type="CodeSnippet" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Runs" Member="Runs">
+    <Type Name="Run">
+      <Column Name="RunId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ProblemId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TopicId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RatingId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="RunStatus" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Memory" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExecutionTime" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LanguageId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Size" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Points" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ContestId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Error" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Type" Type="RunType" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="Run_TestRun" Member="TestRuns" OtherKey="RunId" Type="TestRun" />
+      <Association Name="Contest_Run" Member="Contest" ThisKey="ContestId" Type="Contest" IsForeignKey="true" />
+      <Association Name="Language_Run" Member="Language" ThisKey="LanguageId" Type="Language" IsForeignKey="true" />
+      <Association Name="Problem_Run" Member="Problem" ThisKey="ProblemId" Type="Problem" IsForeignKey="true" />
+      <Association Name="Rating_Run" Member="Rating" ThisKey="RatingId" Type="Rating" IsForeignKey="true" />
+      <Association Name="Topic_Run" Member="Topic" ThisKey="TopicId" Type="Topic" IsForeignKey="true" />
+      <Association Name="User_Run" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sources" Member="Sources">
+    <Type Name="Source">
+      <Column Name="SourceId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Association Name="Source_Problem" Member="Problems" OtherKey="SourceId" Type="Problem" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Standings" Member="Standings">
+    <Type Name="Standing">
+      <Column Name="StandingId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Points" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Rank" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="User_Standing" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SuggestedEntities" Member="SuggestedEntities">
+    <Type Name="SuggestedEntity">
+      <Column Name="SuggestedEntityId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="Domain" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="NotifyEmail" Type="System.String" DbType="VarChar(320) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tags" Member="Tags">
+    <Type Name="Tag">
+      <Column Name="TagId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Keyword" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="ParentTagId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UrlName" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryFlags" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Tag_BlogTag" Member="BlogTags" OtherKey="TagId" Type="BlogTag" />
+      <Association Name="Tag_ProblemTag" Member="ProblemTags" OtherKey="TagId" Type="ProblemTag" />
+      <Association Name="Tag_Tag" Member="Tags" OtherKey="ParentTagId" Type="Tag" />
+      <Association Name="Tag_Tag" Member="Tag1" ThisKey="ParentTagId" Type="Tag" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Teams" Member="Teams">
+    <Type Name="Team">
+      <Column Name="TeamId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AffiliationId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TopicId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Status" Type="TeamStatus" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Scope" Type="TeamScope" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="PictureId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UrlName" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Association Name="Team_ContestUser" Member="ContestUsers" OtherKey="TeamId" Type="ContestUser" />
+      <Association Name="Team_Event" Member="Events" OtherKey="TeamId" Type="Event" />
+      <Association Name="Team_TeamUser" Member="TeamUsers" OtherKey="TeamId" Type="TeamUser" />
+      <Association Name="Affiliation_Team" Member="Affiliation" ThisKey="AffiliationId" Type="Affiliation" IsForeignKey="true" />
+      <Association Name="Picture_Team" Member="Picture" ThisKey="PictureId" Type="Picture" IsForeignKey="true" />
+      <Association Name="Topic_Team" Member="Topic" ThisKey="TopicId" Type="Topic" IsForeignKey="true" />
+      <Association Name="User_Team" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TeamUsers" Member="TeamUsers">
+    <Type Name="TeamUser">
+      <Column Name="TeamId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Status" Type="TeamUserStatus" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="Team_TeamUser" Member="Team" ThisKey="TeamId" Type="Team" IsForeignKey="true" />
+      <Association Name="User_TeamUser" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TestCases" Member="TestCases">
+    <Type Name="TestCase">
+      <Column Name="TestCaseId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProblemId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Input" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" IsDelayLoaded="true" />
+      <Column Name="Output" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="TimeFactor" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="TestCase_TestRun" Member="TestRuns" OtherKey="TestCaseId" Type="TestRun" />
+      <Association Name="Problem_TestCase" Member="Problem" ThisKey="ProblemId" Type="Problem" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TestRuns" Member="TestRuns">
+    <Type Name="TestRun">
+      <Column Name="TestRunId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TestCaseId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RunId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Output" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Status" Type="TestRunStatus" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Error" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Run_TestRun" Member="Run" ThisKey="RunId" Type="Run" IsForeignKey="true" />
+      <Association Name="TestCase_TestRun" Member="TestCase" ThisKey="TestCaseId" Type="TestCase" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Topics" Member="Topics">
+    <Type Name="Topic">
+      <Column Name="TopicId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ForumId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Visible" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Topic_Editorial" Member="Editorials" OtherKey="TopicId" Type="Editorial" />
+      <Association Name="Topic_Entity" Member="Entities" OtherKey="TopicId" Type="Entity" />
+      <Association Name="Topic_Event" Member="Events" OtherKey="TopicId" Type="Event" />
+      <Association Name="Topic_Post" Member="Posts" OtherKey="TopicId" Type="Post" />
+      <Association Name="Topic_Run" Member="Runs" OtherKey="TopicId" Type="Run" />
+      <Association Name="Topic_Team" Member="Teams" OtherKey="TopicId" Type="Team" />
+      <Association Name="Topic_TopicSubscription" Member="TopicSubscriptions" OtherKey="TopicId" Type="TopicSubscription" />
+      <Association Name="Topic_CodeSnippet" Member="CodeSnippets" OtherKey="TopicId" Type="CodeSnippet" />
+      <Association Name="Forum_Topic" Member="Forum" ThisKey="ForumId" Type="Forum" IsForeignKey="true" />
+      <Association Name="User_Topic" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TopicSubscriptions" Member="TopicSubscriptions">
+    <Type Name="TopicSubscription">
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TopicId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Topic_TopicSubscription" Member="Topic" ThisKey="TopicId" Type="Topic" IsForeignKey="true" />
+      <Association Name="User_TopicSubscription" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserRatings" Member="UserRatings">
+    <Type Name="UserRating">
+      <Column Name="RatingId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Value" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Rating_UserRating" Member="Rating" ThisKey="RatingId" Type="Rating" IsForeignKey="true" />
+      <Association Name="User_UserRating" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Login" Type="System.String" DbType="VarChar(320) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(320) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="ShortName" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="CountryId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Timezone" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LanguageId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TopicId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AffiliationId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="ActivationCode" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="Status" Type="UserStatus" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Points" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GlobalRank" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CountryRank" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EntityRank" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReferralCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReferralCode" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="TooltipFlag" Type="User.UserToolTips" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OptionFlag" Type="User.UserOptions" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PictureId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PermissionsFlag" Type="User.UserPermissions" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="User_Affiliation" Member="Affiliations" OtherKey="UserId" Type="Affiliation" />
+      <Association Name="User_ArticleChange" Member="ArticleChanges" OtherKey="UserId" Type="ArticleChange" />
+      <Association Name="User_Blog" Member="Blogs" OtherKey="UserId" Type="Blog" />
+      <Association Name="User_ContestUser" Member="ContestUsers" OtherKey="UserId" Type="ContestUser" />
+      <Association Name="User_Editorial" Member="Editorials" OtherKey="UserId" Type="Editorial" />
+      <Association Name="User_EventInvitation" Member="EventInvitations" OtherKey="UserId" Type="EventInvitation" />
+      <Association Name="User_Event" Member="Events" OtherKey="UserId" Type="Event" />
+      <Association Name="User_Friend" Member="Friends" OtherKey="FriendId" Type="Friend" />
+      <Association Name="User_Friend1" Member="Friends1" OtherKey="UserId" Type="Friend" />
+      <Association Name="User_NewsFeed" Member="NewsFeeds" OtherKey="UserId" Type="NewsFeed" />
+      <Association Name="User_Notification" Member="Notifications" OtherKey="UserId" Type="Notification" />
+      <Association Name="User_Post" Member="Posts" OtherKey="UserId" Type="Post" />
+      <Association Name="User_Problem" Member="Problems" OtherKey="UserId" Type="Problem" />
+      <Association Name="User_ProblemSubmission" Member="ProblemSubmissions" OtherKey="UserId" Type="ProblemSubmission" />
+      <Association Name="User_ProblemTag" Member="ProblemTags" OtherKey="UserId" Type="ProblemTag" />
+      <Association Name="User_Run" Member="Runs" OtherKey="UserId" Type="Run" />
+      <Association Name="User_Standing" Member="Standings" OtherKey="UserId" Type="Standing" />
+      <Association Name="User_Team" Member="Teams" OtherKey="UserId" Type="Team" />
+      <Association Name="User_TeamUser" Member="TeamUsers" OtherKey="UserId" Type="TeamUser" />
+      <Association Name="User_Topic" Member="Topics" OtherKey="UserId" Type="Topic" />
+      <Association Name="User_TopicSubscription" Member="TopicSubscriptions" OtherKey="UserId" Type="TopicSubscription" />
+      <Association Name="User_UserRating" Member="UserRatings" OtherKey="UserId" Type="UserRating" />
+      <Association Name="User_CodeSnippet" Member="CodeSnippets" OtherKey="UserId" Type="CodeSnippet" />
+      <Association Name="Affiliation_User" Member="Affiliation" ThisKey="AffiliationId" Type="Affiliation" IsForeignKey="true" />
+      <Association Name="Country_User" Member="Country" ThisKey="CountryId" Type="Country" IsForeignKey="true" />
+      <Association Name="Language_User" Member="Language" ThisKey="LanguageId" Type="Language" IsForeignKey="true" />
+      <Association Name="Picture_User" Member="Picture" ThisKey="PictureId" Type="Picture" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CodeSnippets" Member="CodeSnippets">
+    <Type Name="CodeSnippet">
+      <Column Name="SnippetId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RatingId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TopicId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LanguageId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Snippet" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Language_CodeSnippet" Member="Language" ThisKey="LanguageId" Type="Language" IsForeignKey="true" />
+      <Association Name="Rating_CodeSnippet" Member="Rating" ThisKey="RatingId" Type="Rating" IsForeignKey="true" />
+      <Association Name="Topic_CodeSnippet" Member="Topic" ThisKey="TopicId" Type="Topic" IsForeignKey="true" />
+      <Association Name="User_CodeSnippet" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.sp_SubmitAcceptedRun" Method="sp_SubmitAcceptedRun">
+    <Parameter Name="AcceptedRunId" Parameter="acceptedRunId" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

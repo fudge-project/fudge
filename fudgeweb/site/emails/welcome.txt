@@ -1,0 +1,8 @@
+﻿Hello {0},
+Thank you for signing up with Fudge, the Florida Tech Online Judge.
+
+To activate your account, follow the link below:
+http://{1}/Users/Activate/{2}
+
+Thanks,
+The Fudge Team

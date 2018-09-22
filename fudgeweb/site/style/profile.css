@@ -1,0 +1,41 @@
+﻿.teams
+{
+	margin-top: 10px;
+}
+.teams a
+{
+	padding-right: 5px;
+}
+.userform table tr td
+{
+	position: relative;
+}
+.userform .error
+{
+	top: 5px;
+	position: absolute;
+}
+.container .title
+{
+	width: 5px;
+}
+.problem_view table
+{
+	width: 100%;
+	margin: 15px 0px 15px 0px;
+	border: 1px solid #CCC;
+	border-collapse: collapse;
+}
+.problem_view table tr th
+{
+	background-color: #F5F5F5;
+	border-bottom: 1px solid #CCCCCC;
+	padding: 3px;
+}
+.problem_view table tr td
+{
+	height: 30px;
+	border-top: 1px solid #F5F5F5;
+	padding-right: 3px;
+	text-align: center;
+}

@@ -1,0 +1,42 @@
+﻿.referral
+{
+	margin-bottom: 10px;
+}
+.referral table
+{
+	margin-left: 15px;
+}
+.referral table tr td
+{
+	padding: 4px;
+}
+.mission
+{
+	float: left;
+	width: 600px;
+}
+.mission p
+{
+	font-size: 15px;
+}
+.mission a
+{
+	font-size: 15px;
+	text-decoration: none;
+}
+.mission li
+{
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.mission .links
+{
+	border-top: 1px solid #CCC;
+}
+.mission .links a
+{
+	text-decoration: underline;
+	font-size: 11px;
+	margin-top: 10px;
+	margin-right: 10px;
+}

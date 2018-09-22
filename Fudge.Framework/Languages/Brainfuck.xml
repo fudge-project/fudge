@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<language name="Brainf**k">
+    <compile errors-on-std-out="true">
+        <path>C:\Program Files\Fudge Framework\Brainfuck\bfd.com</path>
+        <arguments>-n "%FILENAME83%"</arguments>
+    </compile>
+    <run type="interpreted" extra-memory="10000000">
+        <path>%EXENAME%</path>
+    </run>
+</language>

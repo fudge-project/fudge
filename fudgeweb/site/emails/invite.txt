@@ -1,0 +1,7 @@
+﻿{2} wants you to prove your coding skills on Fudge, the Florida Tech Online Judge. Compete, connect, and compute with your fellow coders.
+
+To sign up on fudge click the link below:
+http://{0}/Users/Register/{1}
+
+Thanks,
+The Fudge Team

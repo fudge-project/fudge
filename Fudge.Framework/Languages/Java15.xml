@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<language name="Java 1.5">
+    <compile errors-on-std-out="false">
+        <path>C:\Program Files\Fudge Framework\Java\bin\javac</path>
+        <arguments>"%FILENAME%"</arguments>
+    </compile>
+    <run type="interpreted" extra-time="100" extra-memory="10000000">
+        <path>C:\Program Files\Fudge Framework\Java\bin\java</path>
+        <working-directory>%DIRECTORYNAME%</working-directory>
+        <arguments>"%FILENAMEWITHOUTEXTENSION%"</arguments>
+    </run>
+</language>

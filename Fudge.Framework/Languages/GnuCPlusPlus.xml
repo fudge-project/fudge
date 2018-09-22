@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<language name="Gnu C++">
+    <compile errors-on-std-out="false">
+        <path>C:\Program Files\Fudge Framework\MinGW\bin\g++</path>
+        <arguments>"%FILENAME%" -o "%EXENAME%" -O2 -ansi -fno-asm -w</arguments>
+    </compile>
+    <run type="native">
+        <path>%EXENAME%</path>
+    </run>    
+</language>

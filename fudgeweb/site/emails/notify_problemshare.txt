@@ -1,0 +1,6 @@
+﻿{0} wants to share a problem with you.
+
+To see it, click here http://fudge.fit.edu/Problems/Archive/{1}
+
+Thanks,
+The Fudge Team

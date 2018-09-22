@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<language name="C# 2.0">
+    <compile errors-on-std-out="true">
+        <path>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\csc.exe</path>
+        <arguments>/optimize+ /warn:0 /nologo /out:"%EXENAME%" "%FILENAME%"</arguments>
+    </compile>
+    <run type="interpreted">
+        <path>%EXENAME%</path>
+    </run>
+</language>

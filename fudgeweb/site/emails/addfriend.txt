@@ -1,0 +1,7 @@
+﻿{1} added you as a friend on Fudge.  We need you to confirm that you are, in fact, friends with {1}.
+
+To confirm this friend request, follow the link below: 
+http://{0}/Users/Friends/Pending
+
+Thanks,
+The Fudge Team

@@ -1,0 +1,28 @@
+<html>
+ <head>
+  <link rel="Stylesheet" href="default.css" />  
+  <link rel="Stylesheet" href="fudgecontrols.css" />  
+ </head>
+
+<body class="problem_statement">
+
+<script type="text/javascript">
+
+// Load XML 
+var xml = new ActiveXObject("Microsoft.XMLDOM")
+xml.async = false
+xml.load("temp.xml")
+
+// Load XSL
+var xsl = new ActiveXObject("Microsoft.XMLDOM")
+xsl.async = false
+xsl.load("Problem.xsl")
+
+// Transform
+document.write(xml.transformNode(xsl))
+
+</script>
+
+</body>
+</html>
+

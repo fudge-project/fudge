@@ -1,0 +1,9 @@
+﻿{0} pushed a comment on your Stack
+
+"{1}"
+
+To see your Stack, follow the link below:
+http://fudge.fit.edu/Users/Profile
+
+Thanks,
+The Fudge Team

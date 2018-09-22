@@ -1,0 +1,8 @@
+<publishData>
+  <publishTarget publishUrl="ftp://milk/">
+    <file relUrl="bin/fudgefx.pdb" publishTime="10/20/2007 21:54:23" />
+    <file relUrl="Web.config" publishTime="10/18/2007 21:50:56" />
+    <file relUrl="Submission.asmx" publishTime="10/11/2007 22:37:57" />
+    <file relUrl="bin/fudgefx.dll" publishTime="10/20/2007 21:54:23" />
+  </publishTarget>
+</publishData>

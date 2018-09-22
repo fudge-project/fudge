@@ -1,0 +1,75 @@
+﻿.blog .main
+{
+	float: right;
+	border-right: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+	padding-right: 5px;
+	padding-left:10px;
+	width: 70%;
+	min-height:400px;
+}
+
+.blog .main .item
+{
+	padding-bottom: 10px;	
+}
+.blog .heading
+{
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.blog .main .item .heading_description
+{
+	padding: 2px 2px 1px 2px;
+}
+.blog .main .item .heading_description a
+{
+	margin: 0px;
+}
+.blog .main .item .footer
+{
+	padding-top: 5px;
+	border-top: 1px solid #CCC;
+	font-weight:bold;
+	margin-top:10px;
+}
+.blog a
+{
+	text-decoration: none;
+}
+.blog .side_links
+{
+	float: left;
+	width: 27%;
+	padding: 3px;
+}
+.blog .side_links .heading
+{
+	border-bottom-style: dotted;
+	margin-bottom: 5px;	
+}
+.blog .side_links .archive_item
+{
+	font-weight: bold;
+	padding-right: 15px;
+}
+.blog .side_links .about img
+{
+	padding-right: 5px;
+}
+.blog .side_links .about
+{
+	font-weight: bold;
+	margin-top: 10px;
+}
+.blog .recent_post
+{
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.blog .code 
+{
+	
+}

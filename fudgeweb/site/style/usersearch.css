@@ -1,0 +1,25 @@
+﻿.search_panel
+{
+	margin-left: 50px;
+}
+.search_panel table
+{
+	border-style: none;
+	margin-left: 200px;
+	width: auto;
+}
+.search_panel table td
+{
+	text-align: left;
+	border-style: none;
+	padding: 4px;
+}
+.heading
+{
+	margin-bottom: 5px;
+}
+
+.error
+{
+	margin-top: 10px;
+}
